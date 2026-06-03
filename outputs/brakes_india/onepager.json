@@ -1,0 +1,1241 @@
+{
+  "entity": {
+    "input_name": "Brakes India Private Limited",
+    "input_hint": "TVS group, Chennai",
+    "canonical_name": "Brakes India Private Limited",
+    "aliases": [
+      "Brakes India",
+      "Brakes India Pvt Ltd"
+    ],
+    "country": "India",
+    "listing_status": "unlisted",
+    "ticker": null,
+    "registry_id": null,
+    "website": "https://www.brakesindia.com",
+    "disambiguation_note": "Resolved offline to Brakes India Private Limited, the unlisted Chennai-based auto-components and foundry company associated with the TVS group.",
+    "data_richness_tier": "sparse"
+  },
+  "overview": [
+    {
+      "id": "ove-1",
+      "section": "overview",
+      "text": "Brakes India Private Limited was incorporated on 09 November 1962.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "BRAKES INDIA PRIVATE LIMITED is a Private Limited Company and was incorporated on Nov 09, 1962 in India.",
+          "locator": {
+            "url": "https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc"
+          }
+        },
+        {
+          "source_id": "S1",
+          "exact_quote": "Brakes India Private Limited, is an unlisted private company incorporated on 09 November, 1962.",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 2,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quotes state incorporation on 09 Nov 1962."
+      },
+      "confidence": {
+        "score": 0.82,
+        "label": "High",
+        "rationale": "tier=1, sources=2, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-2",
+      "section": "overview",
+      "text": "The company is registered at the Registrar of Companies, Chennai, with CIN U35999TN1962PTC004928.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "It is registered at Registrar of Companies, ROC Chennai. Its corporate identification number is (CIN) U35999TN1962PTC004928",
+          "locator": {
+            "url": "https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states ROC Chennai and exact CIN."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-3",
+      "section": "overview",
+      "text": "Brakes India is the largest manufacturer of brake systems in India.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "Brakes India was established in 1962 and has grown to be the largest manufacturer of brake systems in India.",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states largest manufacturer of brake systems in India."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-4",
+      "section": "overview",
+      "text": "The company is part of the $2.5 billion T S Santhanam family group, with lineage from the erstwhile TVS Group.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "As part of the $2.5 bn T S Santhanam family group, with lineage from the erstwhile TVS Group",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states $2.5 bn T S Santhanam family group with TVS lineage."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-5",
+      "section": "overview",
+      "text": "Brakes India is headquartered in Chennai.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "Brakes India is headquartered in Chennai",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states headquartered in Chennai."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-6",
+      "section": "overview",
+      "text": "The company operates 15 manufacturing plants across India.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "Brakes India is headquartered in Chennai with 15 manufacturing plants across the country",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states 15 manufacturing plants across the country."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-7",
+      "section": "overview",
+      "text": "Brakes India serves local and multinational OEM customers across the light vehicle, commercial vehicle, tractors and off-highway segments.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "catering to local and multinational OEM customers across the light vehicle, commercial vehicle, tractors and the off-highway segments",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states catering to OEMs across listed segments."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-8",
+      "section": "overview",
+      "text": "The company has three main divisions: Brake division, Foundry division, and Polymer division.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "Brakes India Private Limited has three main divisions; Brake division, Foundry division and Polymer division.",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states three divisions with exact names."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-9",
+      "section": "overview",
+      "text": "Its product portfolio includes calipers, actuation, drum brakes, valves, hose ABS and brake fluid for passenger vehicles, S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles, and Dry and Wet multiple plate disk brakes for agricultural tractors.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "The comprehensive product portfolio includes calipers, actuation, drum brakes, valves, hose ABS and brake fluid for passenger vehicles, S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles and Dry and Wet multiple plate disk brakes for agricultural tractors.",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-10",
+      "section": "overview",
+      "text": "The company generated revenue of INR 7,550 crore for the financial year ending 31 March 2025.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "BRAKES INDIA PRIVATE LIMITED generated a revenue of INR 7,550Cr for the financial year ending on Mar 31, 2025",
+          "locator": {
+            "url": "https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-11",
+      "section": "overview",
+      "text": "As of 1 May 2025, the company had 10,238 employees.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "It had a team size of 10238 employees as on May 01, 2025.",
+          "locator": {
+            "url": "https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-12",
+      "section": "overview",
+      "text": "The company has a well-equipped R&D centre capable of designing, developing, testing and validating products.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S6",
+          "exact_quote": "With a well-equipped R&D centre capable of designing, developing, testing and validating products",
+          "locator": {
+            "url": "https://www.tvsgirling.com/"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    }
+  ],
+  "financials": [
+    {
+      "id": "fin-1",
+      "section": "financials",
+      "text": "revenue FY25: 7240.7 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Total Revenue | ₹7,240.7 | -0.48%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue",
+      "period": "FY25",
+      "numeric_value": 7240.7,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-2",
+      "section": "financials",
+      "text": "ebitda FY25: 897.9 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "EBITDA | ₹897.9 | -11.29%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda",
+      "period": "FY25",
+      "numeric_value": 897.9,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-3",
+      "section": "financials",
+      "text": "net profit FY25: 626.7 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Net Profit | ₹626.7 | -8.8%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "net profit",
+      "period": "FY25",
+      "numeric_value": 626.7,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-4",
+      "section": "financials",
+      "text": "total equity FY25: 2845.3 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Networth | ₹2,845.3 | 17.15%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote matches claim verbatim"
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "total equity",
+      "period": "FY25",
+      "numeric_value": 2845.3,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-6",
+      "section": "financials",
+      "text": "EBITDA margin FY25: 12.4%",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "EBITDA | ₹897.9 | -11.29%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        },
+        {
+          "source_id": "S1",
+          "exact_quote": "Total Revenue | ₹7,240.7 | -0.48%",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "derived",
+        "rationale": "Computed from verified base figures."
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda margin",
+      "period": "FY25",
+      "numeric_value": 12.4,
+      "unit": "%",
+      "basis": "derived",
+      "derived_from": [
+        "fin-2",
+        "fin-1"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "pro-1",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures disc brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "the company provides a range of products including disc brakes, drum brakes, and hydraulic systems",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        },
+        {
+          "source_id": "S8",
+          "exact_quote": "Disk brakes",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 2,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on disc brakes"
+      },
+      "confidence": {
+        "score": 0.82,
+        "label": "High",
+        "rationale": "tier=1, sources=2, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-2",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures drum brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "the company provides a range of products including disc brakes, drum brakes, and hydraulic systems",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        },
+        {
+          "source_id": "S8",
+          "exact_quote": "drum brakes",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 2,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on drum brakes"
+      },
+      "confidence": {
+        "score": 0.82,
+        "label": "High",
+        "rationale": "tier=1, sources=2, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-3",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures hydraulic systems.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "the company provides a range of products including disc brakes, drum brakes, and hydraulic systems",
+          "locator": {
+            "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on hydraulic systems"
+      },
+      "confidence": {
+        "score": 0.72,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-4",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures calipers.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "The comprehensive product portfolio includes calipers",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on calipers"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-5",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures actuation systems.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "The comprehensive product portfolio includes calipers, actuation",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "grok-4.3",
+        "rationale": "quote says actuation not actuation systems"
+      },
+      "confidence": {
+        "score": 0.375,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-6",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures valves.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "The comprehensive product portfolio includes calipers, actuation, drum brakes, valves",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on valves"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-7",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures hose ABS.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "valves, hose ABS and brake fluid for passenger vehicles",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "direct match on hose ABS"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-9",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures S-cam brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "grok-4.3",
+        "rationale": "quote lists 'S-cam' parallel to brake types but omits 'brakes'"
+      },
+      "confidence": {
+        "score": 0.375,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-10",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures Hydraulic drum brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists 'Hydraulic drum brakes'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-11",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures Electro Magnetic Retarders.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists 'Electro Magnetic Retarders'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-12",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures Dry multiple plate disk brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "Dry and Wet multiple plate disk brakes for agricultural tractors",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists 'Dry ... multiple plate disk brakes'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-13",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures Wet multiple plate disk brakes.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "Dry and Wet multiple plate disk brakes for agricultural tractors",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists 'Wet ... multiple plate disk brakes'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-14",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures permanent mould ferrous castings.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "The foundry division manufactures permanent mould ferrous castings",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote states 'manufactures permanent mould ferrous castings'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-15",
+      "section": "products",
+      "text": "Brakes India Private Limited manufactures Grey iron castings.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "Grey iron and SG iron castings using the Disamatic process",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists 'Grey iron ... castings'"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cli-8",
+      "section": "clients",
+      "text": "Daimler is a customer of Brakes India Private Limited.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "supplying systems and components to global OEM's such as Suzuki, Toyota, Honda, VW, Ford, Nissan Volvo, Daimler, MAN and Indian OEM;s such as TATA and Mahindra",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly lists Daimler among OEMs supplied to."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "cli-9",
+      "section": "clients",
+      "text": "MAN is a customer of Brakes India Private Limited.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "supplying systems and components to global OEM's such as Suzuki, Toyota, Honda, VW, Ford, Nissan Volvo, Daimler, MAN and Indian OEM;s such as TATA and Mahindra",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly lists MAN among OEMs supplied to."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "cli-10",
+      "section": "clients",
+      "text": "TATA is a customer of Brakes India Private Limited.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "supplying systems and components to global OEM's such as Suzuki, Toyota, Honda, VW, Ford, Nissan Volvo, Daimler, MAN and Indian OEM;s such as TATA and Mahindra",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly lists TATA among OEMs supplied to."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "cli-11",
+      "section": "clients",
+      "text": "Mahindra is a customer of Brakes India Private Limited.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S8",
+          "exact_quote": "supplying systems and components to global OEM's such as Suzuki, Toyota, Honda, VW, Ford, Nissan Volvo, Daimler, MAN and Indian OEM;s such as TATA and Mahindra",
+          "locator": {
+            "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly lists Mahindra among OEMs supplied to."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    }
+  ],
+  "gaps": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928",
+      "title": "Brakes India Financials | Company Details | Tofler",
+      "publisher": "tofler.in",
+      "source_type": "regulatory_filing",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:06.029216+00:00",
+      "access": "paywalled",
+      "snapshot_path": null
+    },
+    {
+      "id": "S2",
+      "url": "https://www.brakesindia.com",
+      "title": "Homepage - Brakes India",
+      "publisher": "brakesindia.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:06.031272+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S3",
+      "url": "https://www.brakesindia.com/products/",
+      "title": "Page not found - Brakes India",
+      "publisher": "brakesindia.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:10.629294+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S4",
+      "url": "https://www.brakesindia.com/compliance-disclosures/",
+      "title": "Compliance & Disclosures – Brakes India",
+      "publisher": "brakesindia.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:15.588826+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S5",
+      "url": "https://www.brakesindia.com/",
+      "title": "Homepage - Brakes India",
+      "publisher": "brakesindia.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:21.126845+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S6",
+      "url": "https://www.tvsgirling.com/",
+      "title": "Brakes India: Leading Automotive Component Solutions | TVS Girling",
+      "publisher": "tvsgirling.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:27.895409+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S7",
+      "url": "https://in.linkedin.com/company/brakes-india",
+      "title": "Brakes India | LinkedIn",
+      "publisher": "in.linkedin.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:30.549085+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S8",
+      "url": "https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html",
+      "title": "Brakes India Private Limited - Manufacturer from Chennai, India | About Us",
+      "publisher": "indiamart.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:33.350051+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S9",
+      "url": "https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc",
+      "title": "BRAKES INDIA PRIVATE LIMITED - 2026 Company Profile & Financials - Tracxn",
+      "publisher": "tracxn.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:36:36.306484+00:00",
+      "access": "public",
+      "snapshot_path": null
+    }
+  ],
+  "coverage_report": {
+    "verified": 35,
+    "unverified_dropped": 10,
+    "not_found": 0,
+    "conflicted": 0,
+    "confidence_histogram": {
+      "High": 3,
+      "Medium": 6,
+      "Low": 26
+    },
+    "by_section": {
+      "overview": 12,
+      "financials": 5,
+      "products": 14,
+      "clients": 4
+    }
+  },
+  "run_metadata": {
+    "models": {
+      "writer": "claude-sonnet-4-6",
+      "verifier": "grok-4.3",
+      "embeddings": "BAAI/bge-small-en-v1.5 (local)"
+    },
+    "budget": {
+      "calls": {
+        "ddg": 2,
+        "firecrawl": 8,
+        "claude": 4,
+        "grok": 6
+      },
+      "claude_tokens": {
+        "in": 9908,
+        "out": 3212
+      },
+      "grok_tokens": {
+        "in": 4831,
+        "out": 1439
+      }
+    },
+    "elapsed_sec": 189.8,
+    "log": [
+      "Resolving entity: 'Brakes India Private Limited' (hint: TVS group, Chennai)",
+      "Resolved offline -> Brakes India Private Limited | unlisted | tier=sparse | ticker=-",
+      "Discovering candidate sources...",
+      "Found 9 candidate sources (0 annual-report PDFs)",
+      "Ingesting sources...",
+      "  [WEB S1] 58 chunks (firecrawl) <- https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928",
+      "  [WEB S2] 10 chunks (httpx) <- https://www.brakesindia.com",
+      "  [WEB S3] 2 chunks (firecrawl) <- https://www.brakesindia.com/products/",
+      "  [WEB S4] 25 chunks (firecrawl) <- https://www.brakesindia.com/compliance-disclosures/",
+      "  [WEB S5] 75 chunks (firecrawl) <- https://www.brakesindia.com/",
+      "  [WEB S6] 44 chunks (firecrawl) <- https://www.tvsgirling.com/",
+      "  [WEB S7] 18 chunks (httpx) <- https://in.linkedin.com/company/brakes-india",
+      "  [WEB S8] 18 chunks (firecrawl) <- https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html",
+      "  [WEB S9] 59 chunks (firecrawl) <- https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc",
+      "Indexed 309 chunks from 9 sources (0 PDFs, 9 web pages, 7 via Firecrawl)",
+      "Building local embedding index for 309 chunks...",
+      "Embedding index ready.",
+      "[overview] drafting claims (Claude)...",
+      "[overview] drafted 12 evidence-backed claims",
+      "[financials] extracting figures (Claude)...",
+      "[financials] extracted 5 reported cells",
+      "[products] drafting claims (Claude)...",
+      "[products] drafted 16 evidence-backed claims",
+      "[clients] drafting claims (Claude)...",
+      "[clients] drafted 11 evidence-backed claims",
+      "[verify] checking 44 claims with Grok...",
+      "[verify] 35/45 claims passed the entailment gate",
+      "Assembling one-pager + honesty lint...",
+      "Assembled: 12 overview, 5 financial cells, 14 products, 4 clients, 0 gaps"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Secrets
+.env
+api_keys.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Runtime caches & snapshots (re-openable sources are large; keep outputs only)
+.cache/
+store/
+*.pdf
+*.png
+!docs/**/*.png
+
+# Keep the committed evidence-backed outputs
+!outputs/**

@@ -1,0 +1,1211 @@
+{
+  "entity": {
+    "input_name": "Bharat Forge Limited",
+    "input_hint": "NSE: BHARATFORG",
+    "canonical_name": "Bharat Forge Limited",
+    "aliases": [
+      "Bharat Forge",
+      "BFL"
+    ],
+    "country": "India",
+    "listing_status": "listed",
+    "ticker": "BHARATFORG",
+    "registry_id": null,
+    "website": "https://www.bharatforge.com",
+    "disambiguation_note": "Resolved offline to Bharat Forge Limited, the Pune-based listed forging and auto-components company.",
+    "data_richness_tier": "rich"
+  },
+  "overview": [
+    {
+      "id": "ove-1",
+      "section": "overview",
+      "text": "Bharat Forge Limited is the flagship company of the Kalyani Group.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Bharat Forge Limited (BFL) is the flagship Company of the Kalyani Group",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states exact claim."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-2",
+      "section": "overview",
+      "text": "Bharat Forge is among the largest forging companies globally.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "is amongst the largest forging companies globally",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote states exact claim."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-3",
+      "section": "overview",
+      "text": "The company is headquartered in Pune, India.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "Bharat Forge Ltd. is a Pune-based Indian multinational",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Pune-based directly supports HQ in Pune."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-4",
+      "section": "overview",
+      "text": "Bharat Forge was founded in 1961.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "Founded in\n\n1961",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "1961 appears in quote."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-5",
+      "section": "overview",
+      "text": "The company's CEO/MD is B. N. Kalyani.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "CEO/MD\n\nB. N. Kalyani",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "B. N. Kalyani as CEO/MD in quote."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-6",
+      "section": "overview",
+      "text": "Bharat Forge manufactures critical and safety components for sectors including commercial vehicles, passenger vehicles, oil & gas, aerospace, rail, marine, energy, construction, mining, and general engineering.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "The Company manufactures an extensive array of value added critical and safety components for several sectors including Commercial and Passenger Vehicles, oil & gas, Aerospace rail and marine, energy (across renewable and non-renewable sources), construction, mining and general",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote lists all sectors with minor wording match."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-7",
+      "section": "overview",
+      "text": "The company's manufacturing facilities are spread across India (four facilities), Germany (four facilities), Sweden, and France.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "The state of the art manufacturing facilities are spread across India (four facilities), Germany (four facilities), Sweden and France",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Exact match on locations and counts."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-8",
+      "section": "overview",
+      "text": "Bharat Forge's Pune facility is the world's largest single-location forging facility.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S3",
+          "exact_quote": "It is the world's largest single location\nforging facility consisting of fully automated forging press\nlines",
+          "locator": {
+            "url": "https://www.bharatforge.com/company/about-us"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote supports largest facility but omits Pune reference."
+      },
+      "confidence": {
+        "score": 0.486,
+        "label": "Low",
+        "rationale": "tier=3, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-9",
+      "section": "overview",
+      "text": "The Bharat Forge Centre for Advanced Manufacturing is located in Baramati, India, and serves sectors including commercial vehicles, passenger vehicles, railways, aerospace, marine, and power.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S3",
+          "exact_quote": "Bharat Forge\nCentre for Advanced Manufacturing\n\nLocation: Baramati, India\n\nSectors:\n\nCommercial Vehicles, Passenger Vehicles,\nRailways, Aerospace, Marine & Power",
+          "locator": {
+            "url": "https://www.bharatforge.com/company/about-us"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote matches location and sectors exactly."
+      },
+      "confidence": {
+        "score": 0.606,
+        "label": "Medium",
+        "rationale": "tier=3, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-11",
+      "section": "overview",
+      "text": "Bharat Forge was recognized by General Motors as a 2016 Supplier of the Year Winner.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S3",
+          "exact_quote": "Bharat Forge recognized by General\nMotors as a 2016 Supplier of the Year Winner",
+          "locator": {
+            "url": "https://www.bharatforge.com/company/about-us"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote matches claim verbatim."
+      },
+      "confidence": {
+        "score": 0.606,
+        "label": "Medium",
+        "rationale": "tier=3, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "ove-12",
+      "section": "overview",
+      "text": "Promoters hold a 44.07% stake in Bharat Forge as of the latest available shareholding data.",
+      "claim_type": "qualitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "Promoters\n\n44.07%",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "grok-4.3",
+        "rationale": "Number matches but quote lacks company name and 'latest' context."
+      },
+      "confidence": {
+        "score": 0.375,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED"
+    }
+  ],
+  "financials": [
+    {
+      "id": "fin-1",
+      "section": "financials",
+      "text": "revenue FY25: 15122.8 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "Bharat Forge's net sales peaked at 15,122.80 Cr in March 2025",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Number and FY25/March 2025 match; net sales = revenue."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue",
+      "period": "FY25",
+      "numeric_value": 15122.8,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-2",
+      "section": "financials",
+      "text": "revenue FY24: 15682.07 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "down from 15,682.07 Cr in March 2024",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Exact number and FY24/March 2024 match."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue",
+      "period": "FY24",
+      "numeric_value": 15682.07,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-3",
+      "section": "financials",
+      "text": "revenue FY23: 12910.26 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "significantly up from 12,910.26 Cr in March 2023",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Exact number and FY23/March 2023 match."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue",
+      "period": "FY23",
+      "numeric_value": 12910.26,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-4",
+      "section": "financials",
+      "text": "ebitda FY25: 2907.7 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "The operating profit (PBDIT) for March 2025 was 2,907.70 Cr",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "grok-4.3",
+        "rationale": "Number matches but quote uses PBDIT not EBITDA."
+      },
+      "confidence": {
+        "score": 0.375,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda",
+      "period": "FY25",
+      "numeric_value": 2907.7,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-5",
+      "section": "financials",
+      "text": "ebitda FY24: 2785.36 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "showing an increase from 2,785.36 Cr in Marc",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote has exact 2,785.36 Cr figure for prior period"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda",
+      "period": "FY24",
+      "numeric_value": 2785.36,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-6",
+      "section": "financials",
+      "text": "net profit FY25: 916.99 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "profit after tax was 916.99 Cr, slightly up from 904.84 Cr in the previous year",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote states 916.99 Cr PAT for current year"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "net profit",
+      "period": "FY25",
+      "numeric_value": 916.99,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-7",
+      "section": "financials",
+      "text": "net profit FY24: 904.84 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "profit after tax was 916.99 Cr, slightly up from 904.84 Cr in the previous year",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote states 904.84 Cr as prior-year PAT"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "net profit",
+      "period": "FY24",
+      "numeric_value": 904.84,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-9",
+      "section": "financials",
+      "text": "total assets FY25: 19898.18 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "The company's total assets increased to 19,898.18 Cr in March 2025",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote states exact 19,898.18 Cr in March 2025"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "total assets",
+      "period": "FY25",
+      "numeric_value": 19898.18,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-10",
+      "section": "financials",
+      "text": "total assets FY24: 19183.95 INR crore",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "The company's total assets increased to 19,898.18 Cr in March 2025 from 19,183.95 Cr in March 2024",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote states exact 19,183.95 Cr in March 2024"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "total assets",
+      "period": "FY24",
+      "numeric_value": 19183.95,
+      "unit": "INR crore",
+      "basis": "reported",
+      "derived_from": []
+    },
+    {
+      "id": "fin-11",
+      "section": "financials",
+      "text": "revenue growth FY24: 21.5%",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "significantly up from 12,910.26 Cr in March 2023",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        },
+        {
+          "source_id": "S5",
+          "exact_quote": "down from 15,682.07 Cr in March 2024",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "derived",
+        "rationale": "Computed from verified base figures."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue growth",
+      "period": "FY24",
+      "numeric_value": 21.5,
+      "unit": "%",
+      "basis": "derived",
+      "derived_from": [
+        "fin-3",
+        "fin-2"
+      ]
+    },
+    {
+      "id": "fin-12",
+      "section": "financials",
+      "text": "revenue growth FY25: -3.6%",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "down from 15,682.07 Cr in March 2024",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        },
+        {
+          "source_id": "S5",
+          "exact_quote": "Bharat Forge's net sales peaked at 15,122.80 Cr in March 2025",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "derived",
+        "rationale": "Computed from verified base figures."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "revenue growth",
+      "period": "FY25",
+      "numeric_value": -3.6,
+      "unit": "%",
+      "basis": "derived",
+      "derived_from": [
+        "fin-2",
+        "fin-1"
+      ]
+    },
+    {
+      "id": "fin-13",
+      "section": "financials",
+      "text": "EBITDA margin FY25: 19.2%",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "The operating profit (PBDIT) for March 2025 was 2,907.70 Cr",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        },
+        {
+          "source_id": "S5",
+          "exact_quote": "Bharat Forge's net sales peaked at 15,122.80 Cr in March 2025",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "partial",
+        "judge_model": "derived",
+        "rationale": "Computed from verified base figures."
+      },
+      "confidence": {
+        "score": 0.375,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=partial"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda margin",
+      "period": "FY25",
+      "numeric_value": 19.2,
+      "unit": "%",
+      "basis": "derived",
+      "derived_from": [
+        "fin-4",
+        "fin-1"
+      ]
+    },
+    {
+      "id": "fin-14",
+      "section": "financials",
+      "text": "EBITDA margin FY24: 17.8%",
+      "claim_type": "quantitative",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "showing an increase from 2,785.36 Cr in Marc",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        },
+        {
+          "source_id": "S5",
+          "exact_quote": "down from 15,682.07 Cr in March 2024",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "derived",
+        "rationale": "Computed from verified base figures."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED",
+      "metric": "ebitda margin",
+      "period": "FY24",
+      "numeric_value": 17.8,
+      "unit": "%",
+      "basis": "derived",
+      "derived_from": [
+        "fin-5",
+        "fin-2"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "pro-1",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures safety-critical components for the automotive industry.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S5",
+          "exact_quote": "Bharat Forge Ltd. is a global provider of high-performance, innovative, safety, and critical components and solutions in the Auto Components & Equipments industry",
+          "locator": {
+            "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote directly names auto components and safety-critical"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-2",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for the aerospace industry.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "Bharat Forge Limited is a global leader that provides high-performance, safety-critical components and solutions to industries like automotive, aerospace, defence, and industrial equipment",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "quote explicitly lists aerospace among served industries"
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-3",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for the defence industry.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "Bharat Forge Limited is a global leader that provides high-performance, safety-critical components and solutions to industries like automotive, aerospace, defence, and industrial equipment",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote directly lists defence among industries served with components."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-4",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for industrial equipment.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S9",
+          "exact_quote": "high-performance, safety-critical components and solutions to industries like automotive, aerospace, defence, and industrial equipment",
+          "locator": {
+            "url": "https://groww.in/stocks/bharat-forge-ltd"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote directly lists industrial equipment among industries served with components."
+      },
+      "confidence": {
+        "score": 0.495,
+        "label": "Low",
+        "rationale": "tier=5, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-5",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for diesel engines.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Bharat Forge's business in the domestic market spans the full spectrum of the automotive industry (excluding two-wheelers) diesel engines, construction & mining, power, oil & gas, tractors and the general engineering space like sugar, cement and steel",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly includes diesel engines in the business scope."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-6",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for oil & gas applications.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Bharat Forge's business in the domestic market spans the full spectrum of the automotive industry (excluding two-wheelers) diesel engines, construction & mining, power, oil & gas, tractors and the general engineering space",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly includes oil & gas in the business scope."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    },
+    {
+      "id": "pro-7",
+      "section": "products",
+      "text": "Bharat Forge Limited manufactures components for tractors.",
+      "claim_type": "entity_relationship",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "S1",
+          "exact_quote": "Bharat Forge's business in the domestic market spans the full spectrum of the automotive industry (excluding two-wheelers) diesel engines, construction & mining, power, oil & gas, tractors and the general engineering space",
+          "locator": {
+            "page": 23,
+            "doc": "Bharat Forge Annual Report (archive)"
+          }
+        }
+      ],
+      "corroboration_count": 1,
+      "verification": {
+        "entailment": "entailed",
+        "judge_model": "grok-4.3",
+        "rationale": "Quote explicitly includes tractors in the business scope."
+      },
+      "confidence": {
+        "score": 0.735,
+        "label": "Medium",
+        "rationale": "tier=1, sources=1, entailment=entailed"
+      },
+      "status": "VERIFIED"
+    }
+  ],
+  "clients": [],
+  "gaps": [
+    {
+      "section": "clients",
+      "description": "No clients could be verified from available sources.",
+      "searched": [],
+      "reason": "No source explicitly named customers; logos alone are not evidence."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.bharatforge.com/assets/pdf/investors/annualReport/AR51.pdf",
+      "title": "Bharat Forge Annual Report (archive)",
+      "publisher": "",
+      "source_type": "annual_report",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:21.725704+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S10",
+      "url": "https://trendlyne.com/investor-presentations/184/BHARATFORG/bharat-forge-ltd/",
+      "title": "Human Verification",
+      "publisher": "trendlyne.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:46.779401+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bharatforge.com",
+      "title": "Leading Forging Company in India | Bharat Forge Pune, India",
+      "publisher": "bharatforge.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:21.809833+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bharatforge.com/company/about-us",
+      "title": "Bharat Forge - Leading Automotive, Aerospace Forging Company in India",
+      "publisher": "bharatforge.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:21.810617+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S4",
+      "url": "https://www.bharatforge.com/investors/reports/investor-presentation",
+      "title": "Bharat Forge - Investor Presentation",
+      "publisher": "bharatforge.com",
+      "source_type": "company_website",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:21.812502+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S5",
+      "url": "https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0",
+      "title": "BHARATFORG Share Price | Bharat Forge Ltd. Stock Analysis & Recommendation",
+      "publisher": "marketsmojo.com",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:26.769956+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S6",
+      "url": "https://www.marketscreener.com/quote/stock/BHARAT-FORGE-LIMITED-6493080/news/Bharat-Forge-Company-Presentation-November-2024-48389814/",
+      "title": "Bharat Forge : Company Presentation – November 2024 | MarketScreener",
+      "publisher": "marketscreener.com",
+      "source_type": "other",
+      "publication_date": "2024-11-17T08:32:04+01:00",
+      "retrieved_at": "2026-06-02T14:32:29.753174+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S7",
+      "url": "https://www.slideshare.net/slideshow/bharat-forge-72331847/72331847",
+      "title": "Bharat forge | PPTX",
+      "publisher": "slideshare.net",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:35.874025+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S8",
+      "url": "https://www.autocarpro.in/news/bharat-forge-to-establish-private-marine-gas-turbine-complex-in-visakhapatnam-132689",
+      "title": "Bharat Forge to Establish Private Marine Gas Turbine Complex in Visakhapatnam | Autocar Professional",
+      "publisher": "autocarpro.in",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:38.127750+00:00",
+      "access": "public",
+      "snapshot_path": null
+    },
+    {
+      "id": "S9",
+      "url": "https://groww.in/stocks/bharat-forge-ltd",
+      "title": "Bharat Forge Share Price, Stock Price, LIVE NSE/BSE - Groww",
+      "publisher": "groww.in",
+      "source_type": "other",
+      "publication_date": null,
+      "retrieved_at": "2026-06-02T14:32:44.324365+00:00",
+      "access": "public",
+      "snapshot_path": null
+    }
+  ],
+  "coverage_report": {
+    "verified": 31,
+    "unverified_dropped": 2,
+    "not_found": 1,
+    "conflicted": 0,
+    "confidence_histogram": {
+      "High": 0,
+      "Medium": 9,
+      "Low": 22
+    },
+    "by_section": {
+      "overview": 11,
+      "financials": 13,
+      "products": 7,
+      "clients": 0
+    }
+  },
+  "run_metadata": {
+    "models": {
+      "writer": "claude-sonnet-4-6",
+      "verifier": "grok-4.3",
+      "embeddings": "BAAI/bge-small-en-v1.5 (local)"
+    },
+    "budget": {
+      "calls": {
+        "ddg": 2,
+        "firecrawl": 6,
+        "claude": 4,
+        "grok": 4
+      },
+      "claude_tokens": {
+        "in": 9511,
+        "out": 2406
+      },
+      "grok_tokens": {
+        "in": 3247,
+        "out": 972
+      }
+    },
+    "elapsed_sec": 202.0,
+    "log": [
+      "Resolving entity: 'Bharat Forge Limited' (hint: NSE: BHARATFORG)",
+      "Resolved offline -> Bharat Forge Limited | listed | tier=rich | ticker=BHARATFORG",
+      "Discovering candidate sources...",
+      "Found 10 candidate sources (1 annual-report PDFs)",
+      "Ingesting sources...",
+      "  [PDF S1] parsed 265p, kept 35 relevant, 245 chunks <- https://www.bharatforge.com/assets/pdf/investors/annualReport/AR51.pdf",
+      "  [WEB S2] 14 chunks (firecrawl) <- https://www.bharatforge.com",
+      "  [WEB S3] 138 chunks (firecrawl) <- https://www.bharatforge.com/company/about-us",
+      "  [WEB S4] 6 chunks (firecrawl) <- https://www.bharatforge.com/investors/reports/investor-presentation",
+      "  [WEB S5] 74 chunks (firecrawl) <- https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0",
+      "  [WEB S6] 47 chunks (firecrawl) <- https://www.marketscreener.com/quote/stock/BHARAT-FORGE-LIMITED-6493080/news/Bharat-Forge-Company-Presentation-November-2024-48389814/",
+      "  [WEB S7] 21 chunks (firecrawl) <- https://www.slideshare.net/slideshow/bharat-forge-72331847/72331847",
+      "  [WEB S8] 12 chunks (firecrawl) <- https://www.autocarpro.in/news/bharat-forge-to-establish-private-marine-gas-turbine-complex-in-visakhapatnam-132689",
+      "  [WEB S9] 73 chunks (firecrawl) <- https://groww.in/stocks/bharat-forge-ltd",
+      "  [WEB S10] 1 chunks (firecrawl) <- https://trendlyne.com/investor-presentations/184/BHARATFORG/bharat-forge-ltd/",
+      "Indexed 631 chunks from 10 sources (1 PDFs, 9 web pages, 9 via Firecrawl)",
+      "Building local embedding index for 631 chunks...",
+      "Embedding index ready.",
+      "[overview] drafting claims (Claude)...",
+      "[overview] drafted 12 evidence-backed claims",
+      "[financials] extracting figures (Claude)...",
+      "[financials] extracted 10 reported cells",
+      "[products] drafting claims (Claude)...",
+      "[products] drafted 7 evidence-backed claims",
+      "[clients] drafting claims (Claude)...",
+      "[clients] drafted 0 evidence-backed claims",
+      "[verify] checking 29 claims with Grok...",
+      "[verify] 31/33 claims passed the entailment gate",
+      "Assembling one-pager + honesty lint...",
+      "Assembled: 11 overview, 13 financial cells, 7 products, 0 clients, 1 gaps"
+    ]
+  }
+}

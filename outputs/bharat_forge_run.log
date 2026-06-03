@@ -1,0 +1,43 @@
+
+=== One-pager: Bharat Forge Limited (hint: NSE: BHARATFORG) ===
+  · Resolving entity: 'Bharat Forge Limited' (hint: NSE: BHARATFORG)
+  · Resolved offline -> Bharat Forge Limited | listed | tier=rich | ticker=BHARATFORG
+  · Discovering candidate sources...
+  · Found 10 candidate sources (1 annual-report PDFs)
+  · Ingesting sources...
+/Users/suneet/Desktop/Folders/ByndAI/.venv/lib/python3.11/site-packages/firecrawl/v2/types.py:988: UserWarning: Field name "json" in "MonitorPageDiff" shadows an attribute in parent "BaseModel"
+  class MonitorPageDiff(BaseModel):
+/Users/suneet/Desktop/Folders/ByndAI/.venv/lib/python3.11/site-packages/firecrawl/v2/types.py:1003: UserWarning: Field name "json" in "MonitorPageSnapshot" shadows an attribute in parent "BaseModel"
+  class MonitorPageSnapshot(BaseModel):
+  ·   [PDF S1] parsed 265p, kept 35 relevant, 245 chunks <- https://www.bharatforge.com/assets/pdf/investors/annualReport/AR51.pdf
+  ·   [WEB S2] 14 chunks (firecrawl) <- https://www.bharatforge.com
+  ·   [WEB S3] 138 chunks (firecrawl) <- https://www.bharatforge.com/company/about-us
+  ·   [WEB S4] 6 chunks (firecrawl) <- https://www.bharatforge.com/investors/reports/investor-presentation
+  ·   [WEB S5] 74 chunks (firecrawl) <- https://www.marketsmojo.com/stocks-analysis/bharat-forge-880888-0
+  ·   [WEB S6] 47 chunks (firecrawl) <- https://www.marketscreener.com/quote/stock/BHARAT-FORGE-LIMITED-6493080/news/Bharat-Forge-Company-Presentation-November-2024-48389814/
+  ·   [WEB S7] 21 chunks (firecrawl) <- https://www.slideshare.net/slideshow/bharat-forge-72331847/72331847
+  ·   [WEB S8] 12 chunks (firecrawl) <- https://www.autocarpro.in/news/bharat-forge-to-establish-private-marine-gas-turbine-complex-in-visakhapatnam-132689
+  ·   [WEB S9] 73 chunks (firecrawl) <- https://groww.in/stocks/bharat-forge-ltd
+  ·   [WEB S10] 1 chunks (firecrawl) <- https://trendlyne.com/investor-presentations/184/BHARATFORG/bharat-forge-ltd/
+  · Indexed 631 chunks from 10 sources (1 PDFs, 9 web pages, 9 via Firecrawl)
+  · Building local embedding index for 631 chunks...
+  · Embedding index ready.
+  · [overview] drafting claims (Claude)...
+  · [overview] drafted 12 evidence-backed claims
+  · [financials] extracting figures (Claude)...
+  · [financials] extracted 10 reported cells
+  · [products] drafting claims (Claude)...
+  · [products] drafted 7 evidence-backed claims
+  · [clients] drafting claims (Claude)...
+  · [clients] drafted 0 evidence-backed claims
+  · [verify] checking 29 claims with Grok...
+  · [verify] 31/33 claims passed the entailment gate
+  · Assembling one-pager + honesty lint...
+  · Assembled: 11 overview, 13 financial cells, 7 products, 0 clients, 1 gaps
+=== Done in 202.0s | calls={'ddg': 2, 'firecrawl': 6, 'claude': 4, 'grok': 4} ===
+
+Wrote outputs to /Users/suneet/Desktop/Folders/ByndAI/outputs/bharat_forge/
+  - onepager.json  (canonical, full provenance)
+  - onepager.md    (human-readable)
+  - onepager.html  (GPIL-style layout)
+Summary: 31 verified claims, 1 honest gaps, confidence={'High': 0, 'Medium': 9, 'Low': 22}

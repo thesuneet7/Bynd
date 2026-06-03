@@ -1,0 +1,16 @@
+[project]
+name = "onepager-agent"
+version = "0.1.0"
+description = "Fully-sourced, confidence-tagged company one-pager generator with claim-level grounding & cross-model verification"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+onepager = "onepager.cli:main"

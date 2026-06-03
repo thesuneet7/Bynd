@@ -1,0 +1,33 @@
+"""Shared run state threaded through every stage (the 'graph state')."""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any, Optional
+
+from ..schemas import Entity, Gap, Source
+from ..tools.retrieval import EvidenceStore
+
+
+@dataclass
+class RunContext:
+    input_name: str
+    input_hint: Optional[str] = None
+    entity: Optional[Entity] = None
+    store: EvidenceStore = field(default_factory=EvidenceStore)
+    sources: dict[str, Source] = field(default_factory=dict)  # id -> Source
+    gaps: list[Gap] = field(default_factory=list)
+    searched_queries: list[str] = field(default_factory=list)
+    research_trace: list[dict[str, Any]] = field(default_factory=list)
+    _src_counter: int = 0
+    log: list[str] = field(default_factory=list)
+
+    def new_source_id(self) -> str:
+        self._src_counter += 1
+        return f"S{self._src_counter}"
+
+    def register_source(self, source: Source) -> None:
+        self.sources[source.id] = source
+
+    def note(self, msg: str) -> None:
+        self.log.append(msg)
+        print(f"  · {msg}", flush=True)
