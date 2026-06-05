@@ -26,6 +26,11 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Generate a fully-sourced company one-pager.")
     ap.add_argument("name", help="Company name")
     ap.add_argument("--hint", default=None, help="Optional hint (website, ticker, group, city)")
+    ap.add_argument(
+        "--ticker",
+        default=None,
+        help="NSE/BSE ticker for screener.in financials (e.g. BHARATFORG). Overrides entity ticker.",
+    )
     ap.add_argument("--slug", default=None, help="Output folder name under outputs/")
     ap.add_argument("--outdir", default=None, help="Override output directory")
     args = ap.parse_args(argv)
@@ -34,7 +39,7 @@ def main(argv: list[str] | None = None) -> int:
     outdir = Path(args.outdir) if args.outdir else (OUTPUTS_DIR / slug)
     outdir.mkdir(parents=True, exist_ok=True)
 
-    onepager = build_onepager(args.name, args.hint)
+    onepager = build_onepager(args.name, args.hint, outdir=outdir, ticker=args.ticker)
 
     (outdir / "onepager.json").write_text(onepager.model_dump_json(indent=2))
     (outdir / "onepager.md").write_text(render_markdown(onepager))

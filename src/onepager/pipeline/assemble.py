@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from ..financials import FINANCIAL_ROW_ORDER, display_periods
 from ..schemas import (
     Claim,
     ClaimStatus,
@@ -79,6 +80,7 @@ def assemble(ctx: RunContext, claims_by_section: dict[Section, list[Claim]]) -> 
     # Financials get special consolidation/conflict handling.
     fin_cells = [c for c in claims_by_section.get(Section.financials, []) if isinstance(c, FinancialCell)]
     financials, fin_gaps = _consolidate_financials(ctx, fin_cells)
+    financial_periods = display_periods([c.period for c in financials], count=3, skip_latest=1)
 
     def emittable(section: Section) -> list[Claim]:
         kept = [c for c in claims_by_section.get(section, []) if c.is_emittable()]
@@ -89,6 +91,23 @@ def assemble(ctx: RunContext, claims_by_section: dict[Section, list[Claim]]) -> 
     clients = emittable(Section.clients)
 
     gaps: list[Gap] = list(ctx.gaps) + fin_gaps
+    if financial_periods and financials:
+        present = {(c.metric, c.period) for c in financials}
+        missing = [
+            f"{metric} {period}"
+            for metric in FINANCIAL_ROW_ORDER
+            for period in financial_periods
+            if (metric, period) not in present
+        ]
+        if missing:
+            gaps.append(
+                Gap(
+                    section=Section.financials,
+                    description="Some canonical 3-FY financial table cells could not be verified.",
+                    reason="Missing cells are shown as dashes rather than estimated.",
+                    searched=missing[:30],
+                )
+            )
     # Honest NOT_FOUND gaps for empty sections.
     if not overview:
         gaps.append(Gap(section=Section.overview, description="No verifiable overview facts found.",
@@ -105,7 +124,7 @@ def assemble(ctx: RunContext, claims_by_section: dict[Section, list[Claim]]) -> 
                         reason="No source explicitly named customers; logos alone are not evidence."))
 
     onepager = OnePager(
-        entity=entity, overview=overview, financials=financials,
+        entity=entity, overview=overview, financials=financials, financial_periods=financial_periods,
         products=products, clients=clients, gaps=gaps,
         sources=[ctx.sources[sid] for sid in sorted(ctx.sources)],
     )

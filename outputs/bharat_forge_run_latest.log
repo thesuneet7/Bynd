@@ -1,0 +1,51 @@
+
+=== One-pager: Bharat Forge Limited (hint: NSE: BHARATFORG) ===
+  · Resolving entity: 'Bharat Forge Limited' (hint: NSE: BHARATFORG)
+  · Resolved offline -> Bharat Forge Limited | listed | tier=rich | ticker=BHARATFORG
+  · Ticker override: BHARATFORG
+  · Discovering candidate sources...
+  · Found 10 candidate sources (2 annual-report PDFs)
+/Users/suneet/Desktop/Folders/ByndAI/.venv/lib/python3.11/site-packages/firecrawl/v2/types.py:988: UserWarning: Field name "json" in "MonitorPageDiff" shadows an attribute in parent "BaseModel"
+  class MonitorPageDiff(BaseModel):
+/Users/suneet/Desktop/Folders/ByndAI/.venv/lib/python3.11/site-packages/firecrawl/v2/types.py:1003: UserWarning: Field name "json" in "MonitorPageSnapshot" shadows an attribute in parent "BaseModel"
+  class MonitorPageSnapshot(BaseModel):
+  · Archived 5 source snapshots (0 failed) into research/
+  · Ingesting sources...
+  ·   [PDF S1] parsed 242p, kept 35 relevant, 309 chunks <- https://www.bharatforge.com/AR2024/pdf/Annual_Report_2024.pdf
+  ·   [WEB S2] 14 chunks (firecrawl) <- https://www.bharatforge.com
+  ·   [WEB S3] 138 chunks (firecrawl) <- https://www.bharatforge.com/company/about-us
+  ·   [WEB S4] 6 chunks (firecrawl) <- https://www.bharatforge.com/investors/reports/investor-presentation
+  ·   [WEB S5] 5 chunks (firecrawl) <- https://www.bharatforge.com/investors/overview
+  ·   [WEB S6] 8 chunks (firecrawl) <- https://www.bharatforge.com/investors/reports/annual-reports
+  ·   [WEB S7] 9 chunks (firecrawl) <- https://kalyaniforge.com/investors/annual-reports
+  ·   [WEB S8] 1 chunks (firecrawl) <- https://trendlyne.com/fundamentals/documents-annual-reports/184/BHARATFORG/bharat-forge-ltd
+  · Indexed 490 chunks from 8 sources (1 PDFs, 7 web pages, 7 via Firecrawl)
+  · Building local embedding index for 490 chunks...
+  · Embedding index ready.
+  · Starting recursive evidence research loop...
+  · Research loop reached coverage targets for financials/products/clients.
+  · Research coverage: financials=12 chunks/1 sources, products=11 chunks/3 sources, clients=12 chunks/3 sources
+  · Indexed archived documents: 64 chunks from 1 saved sources
+  · Refreshing embedding index for 554 chunks after archive ingestion...
+  · Embedding index ready.
+  · [overview] drafting claims (Claude)...
+  · [overview] drafted 12 evidence-backed claims
+  · [financials/screener] expanded 39 schedule rows from 8 (+) parents via API
+  · [financials/screener] BHARATFORG page=httpx: 100 metric cells, periods FY21, FY22, FY23, FY24, FY25, FY26
+  · [financials] extracting figures (Claude)...
+  · [financials] extracted 14 reported cells from filings
+  · [products] drafting claims (Claude)...
+  · [products] drafted 13 evidence-backed claims
+  · [clients] drafting claims (Claude)...
+  · [clients] drafted 0 evidence-backed claims
+  · [verify] checking 25 claims with Grok (100 structured API)...
+  · [verify] 127/132 claims passed the entailment gate
+  · Assembling one-pager + honesty lint...
+  · Assembled: 10 overview, 107 financial cells, 10 products, 0 clients, 2 gaps
+=== Done in 80.7s | calls={'tavily': 2, 'firecrawl': 3, 'claude': 4, 'grok': 4} ===
+
+Wrote outputs to /Users/suneet/Desktop/Folders/ByndAI/outputs/bharat_forge/
+  - onepager.json  (canonical, full provenance)
+  - onepager.md    (human-readable)
+  - onepager.html  (GPIL-style layout)
+Summary: 127 verified claims, 2 honest gaps, confidence={'High': 0, 'Medium': 125, 'Low': 2}

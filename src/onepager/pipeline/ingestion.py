@@ -67,6 +67,7 @@ def ingest(ctx: RunContext, candidates: list[Candidate], *, max_pdfs: int = 1) -
                 id=sid, url=cand.url, title=cand.title or "Filing/Report",
                 source_type=cand.source_type if cand.source_type in _PDF_TYPES else SourceType.annual_report,
                 retrieved_at=_now(), access="public",
+                snapshot_path=(ctx.archived_by_url.get(cand.url) or {}).get("local_path"),
             )
             ctx.register_source(src)
             known_urls.add(cand.url)
@@ -96,6 +97,7 @@ def ingest(ctx: RunContext, candidates: list[Candidate], *, max_pdfs: int = 1) -
                 id=sid, url=cand.url, title=res.title or cand.title or dom,
                 publisher=dom, source_type=cand.source_type,
                 publication_date=res.published, retrieved_at=_now(), access=access,
+                snapshot_path=(ctx.archived_by_url.get(cand.url) or {}).get("local_path"),
             )
             ctx.register_source(src)
             known_urls.add(cand.url)

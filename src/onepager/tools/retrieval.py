@@ -35,7 +35,11 @@ class _Embedder:
 
             from fastembed import TextEmbedding
 
-            self._model = TextEmbedding(model_name=_EMBED_MODEL_NAME, threads=os.cpu_count() or 4)
+            # Fastembed/ONNX can become memory-heavy when it fans out across every
+            # CPU core. Keep this conservative so recursive research can re-index
+            # hundreds of chunks reliably on laptops.
+            threads = min(4, os.cpu_count() or 2)
+            self._model = TextEmbedding(model_name=_EMBED_MODEL_NAME, threads=threads)
         except Exception:
             self._ok = False
 
@@ -72,6 +76,11 @@ _RELEVANCE_TERMS: dict[str, float] = {
     "cash flow": 3, "borrowings": 3, "net worth": 3, "total equity": 3,
     "return on": 3, "financial highlights": 6, "₹ crore": 3, "in crore": 3,
     "revenue": 2, "turnover": 3, "margin": 2,
+    "cost of materials consumed": 5, "raw material": 4, "material cost": 5,
+    "material margin": 5, "operating ebitda": 5, "pbd it": 4, "pbdit": 4,
+    "net working capital": 5, "working capital days": 5, "nwc days": 5,
+    "return on capital employed": 5, "roce": 5, "capital employed": 4,
+    "net debt": 5, "cash and cash equivalents": 4,
     # business / overview / products / clients
     "manufactures": 3, "manufacturing": 2, "products": 2, "product portfolio": 4,
     "installed capacity": 4, "segment": 2, "business overview": 4, "our business": 3,
@@ -131,11 +140,13 @@ def chunk_text(text: str, *, target: int = 900, overlap: int = 150) -> list[str]
 class EvidenceStore:
     """In-memory vector store scoped to a single company run."""
 
-    def __init__(self, max_chunks: int = 700) -> None:
+    def __init__(self, max_chunks: int = 700, max_embedding_chunks: int = 320) -> None:
         self.chunks: list[Chunk] = []
         self._matrix: Optional[np.ndarray] = None
         self._n = 0
         self.max_chunks = max_chunks  # safety ceiling so embedding stays fast
+        self.max_embedding_chunks = max_embedding_chunks
+        self._keyword_only = False
 
     def add(self, text: str, source_id: str, locator: Optional[dict] = None) -> int:
         if len(self.chunks) >= self.max_chunks:
@@ -161,6 +172,12 @@ class EvidenceStore:
         emb = _get_embedder()
         if self._matrix is not None or not self.chunks:
             return
+        if len(self.chunks) > self.max_embedding_chunks:
+            # Large recursive archives can make local ONNX embedding rebuilds slow
+            # or unstable. The saved archive remains the source of truth; retrieval
+            # falls back to deterministic keyword scoring for oversized corpora.
+            self._keyword_only = True
+            return
         if emb.available:
             self._matrix = emb.embed([c.text for c in self.chunks])
 
@@ -169,7 +186,7 @@ class EvidenceStore:
             return []
         emb = _get_embedder()
         self._ensure_index()
-        if emb.available and self._matrix is not None:
+        if not self._keyword_only and emb.available and self._matrix is not None:
             qv = emb.embed([query])[0]
             scores = self._matrix @ qv
         else:

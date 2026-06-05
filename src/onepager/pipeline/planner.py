@@ -12,8 +12,9 @@ from urllib.parse import urlparse
 from ..budget import BUDGET
 from ..schemas import Gap, Section, SourceType
 from ..tools.search import Searcher
+from .archive import archive_candidates
 from .context import RunContext
-from .discovery import Candidate, _classify
+from .discovery import Candidate, _classify, _matches_entity
 from .ingestion import ingest
 
 
@@ -178,6 +179,8 @@ def _search_for_need(ctx: RunContext, need: ResearchNeed, *, round_idx: int) -> 
         for hit in hits:
             if not hit.url or hit.url in seen or hit.url in existing_urls:
                 continue
+            if not _matches_entity(ctx, hit.url, hit.title, hit.content):
+                continue
             stype, prio = _classify(hit.url, entity_site)
             cand = Candidate(
                 url=hit.url,
@@ -235,6 +238,7 @@ def recursive_research(ctx: RunContext, *, max_rounds: int = 3) -> dict:
         if not candidates:
             ctx.note("Research round found no new candidate URLs.")
             continue
+        archive_candidates(ctx, candidates)
         ingest(ctx, candidates, max_pdfs=2)
         if ctx.store.chunks:
             ctx.store.warm_index()

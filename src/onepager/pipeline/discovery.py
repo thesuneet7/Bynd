@@ -64,6 +64,17 @@ def _classify(url: str, entity_site: str | None) -> tuple[SourceType, int]:
     return SourceType.other, 4
 
 
+def _matches_entity(ctx: RunContext, url: str, title: str = "", snippet: str = "") -> bool:
+    """Avoid polluting a run with similarly named registry pages."""
+    e = ctx.entity
+    if not e:
+        return True
+    combined = f"{url} {title} {snippet}".lower()
+    if e.registry_id and _domain(url) in _REGISTRY_DOMAINS:
+        return e.registry_id.lower() in combined
+    return True
+
+
 def _queries(ctx: RunContext) -> list[tuple[str, int]]:
     e = ctx.entity
     name = e.canonical_name if e else ctx.input_name
@@ -130,6 +141,8 @@ def discover_sources(ctx: RunContext) -> list[Candidate]:
         hits = searcher.search(query, max_results=k, depth=depth)
         for h in hits:
             if not h.url or h.url in seen:
+                continue
+            if not _matches_entity(ctx, h.url, h.title, h.content):
                 continue
             stype, prio = _classify(h.url, entity_site)
             seen[h.url] = Candidate(url=h.url, title=h.title, snippet=h.content, source_type=stype, priority=prio)

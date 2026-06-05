@@ -47,6 +47,7 @@ _KNOWN_ENTITIES = {
         aliases=["Brakes India", "Brakes India Pvt Ltd"],
         country="India",
         listing_status="unlisted",
+        registry_id="U35999TN1962PTC004928",
         website="https://www.brakesindia.com",
         disambiguation_note=(
             "Resolved offline to Brakes India Private Limited, the unlisted "

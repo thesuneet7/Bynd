@@ -7,6 +7,7 @@ from __future__ import annotations
 from collections import defaultdict
 from html import escape
 
+from ..financials import FINANCIAL_ROW_ORDER, FINANCIAL_UNITS, display_periods, financial_label, period_key
 from ..schemas import ClaimStatus, FinancialCell, OnePager
 
 _CONF_CLASS = {"High": "c-high", "Medium": "c-med", "Low": "c-low"}
@@ -80,6 +81,8 @@ def render_html(op: OnePager) -> str:
         meta = f"{s.source_type.value} · tier {s.reliability_tier} · {s.access}"
         if s.publication_date:
             meta += f" · {escape(str(s.publication_date))}"
+        if s.snapshot_path:
+            meta += f" · snapshot: {escape(s.snapshot_path)}"
         src_items.append(f'<li class="src"><b>[{s.id}]</b> '
                          f'<a href="{escape(s.url)}" target="_blank">{escape(s.title or s.url)}</a> '
                          f'<span class="tag">{escape(meta)}</span></li>')
@@ -119,22 +122,19 @@ def _financials_table(op: OnePager) -> str:
     cells = [c for c in op.financials if isinstance(c, FinancialCell)]
     if not cells:
         return "<p><em>No multi-year financial figures could be verified from available sources.</em></p>"
-    periods = sorted({c.period for c in cells}, key=_pk)
+    periods = op.financial_periods or display_periods([c.period for c in cells], count=3, skip_latest=1)
     by_metric: dict[str, dict[str, FinancialCell]] = defaultdict(dict)
-    order: list[str] = []
     for c in cells:
-        if c.metric not in by_metric:
-            order.append(c.metric)
         by_metric[c.metric][c.period] = c
 
     head = "<tr><th>Metric (unit)</th>" + "".join(f"<th>{escape(p)}</th>" for p in periods) + "<th>Src · Conf</th></tr>"
     rows = []
-    for metric in order:
+    for metric in FINANCIAL_ROW_ORDER:
         rc = by_metric[metric]
-        any_cell = next(iter(rc.values()))
-        label = f"{metric.title()} ({escape(any_cell.unit)})"
-        cls = ' class="derived"' if any_cell.basis == "derived" else ""
-        if any_cell.basis == "derived":
+        unit = FINANCIAL_UNITS.get(metric) or (next(iter(rc.values())).unit if rc else "")
+        label = escape(financial_label(metric, unit))
+        cls = ' class="derived"' if any(c.basis == "derived" for c in rc.values()) else ""
+        if any(c.basis == "derived" for c in rc.values()):
             label += " (derived)"
         tds, cites, confs = [], set(), set()
         for p in periods:
@@ -160,5 +160,4 @@ def _fmt(v) -> str:
 
 
 def _pk(p: str):
-    d = "".join(ch for ch in p if ch.isdigit())
-    return int(d) if d else 0
+    return period_key(p)

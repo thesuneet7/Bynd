@@ -113,6 +113,36 @@ class PdfParser:
         cache_file.write_text(json.dumps([p.__dict__ for p in pages]))
         return pages
 
+    def parse_file(self, path: Path, *, max_pages: Optional[int] = None) -> list[ParsedPage]:
+        try:
+            stat = path.stat()
+        except OSError:
+            return []
+        cache_key = hashlib.sha1(f"{path.resolve()}:{stat.st_size}:{stat.st_mtime_ns}".encode()).hexdigest()[:16]
+        cache_file = _PARSE_CACHE / f"{cache_key}.json"
+        if cache_file.exists():
+            data = json.loads(cache_file.read_text())
+            return [ParsedPage(**p) for p in data]
+
+        pages = _local_extract_pages(path)
+        if pages:
+            cache_file.write_text(json.dumps([p.__dict__ for p in pages]))
+            return pages
+
+        cap = max_pages if max_pages is not None else SETTINGS.max_llamaparse_pages
+        if not self._parser or cap <= 0 or BUDGET.remaining("llamaparse_pages") <= 0:
+            return []
+        cap = min(cap, BUDGET.remaining("llamaparse_pages"))
+
+        try:
+            docs = self._parser.load_data(str(path))
+        except Exception:
+            return []
+        pages = _docs_to_pages(docs, cap)
+        BUDGET.charge("llamaparse_pages", amount=len(pages))
+        cache_file.write_text(json.dumps([p.__dict__ for p in pages]))
+        return pages
+
 
 def _local_extract_pages(path: Path) -> list[ParsedPage]:
     """Free local PDF text extraction. It is less layout-aware than LlamaParse,

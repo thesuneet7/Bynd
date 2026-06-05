@@ -12,6 +12,12 @@ from __future__ import annotations
 
 from typing import Optional
 
+from ..financials import (
+    canonical_metric,
+    derive_financial_metrics,
+    fetch_screener_financials,
+    fetch_tofler_financials,
+)
 from ..llm import claude
 from ..schemas import (
     Claim,
@@ -138,33 +144,94 @@ def run_generic_agent(ctx: RunContext, section: Section, start_id: int) -> list[
 # --------------------------------------------------------------------------- #
 # Financials agent (specialized)
 # --------------------------------------------------------------------------- #
-_FIN_SYS = """You are a financial analyst extracting a multi-year figures table for a company
-one-pager, using ONLY the evidence provided (annual reports / filings / results).
+_FIN_SYS = """You are a financial analyst extracting a canonical 3-FY figures table for a company
+one-pager, using ONLY the evidence provided from saved filings, PDFs, spreadsheets, and pages.
 Rules:
 - Extract REPORTED figures only. For each, cite the evidence ID and the EXACT verbatim
   quote (including the number) that supports it.
 - Capture the metric, the fiscal period (e.g. FY24), the numeric value, and the unit
   exactly as reported (e.g. "INR crore", "INR million"). Do NOT convert units.
-- Cover these metrics where present: revenue (revenue from operations / total income),
-  EBITDA (or operating profit), net profit (PAT), total debt / net debt / borrowings,
-  total equity, capital employed (for RoCE). Prefer the most recent 3-4 fiscal years.
+- Prefer the most recent 3 fiscal years, but include a 4th prior year if needed for growth.
+- Extract FINAL table metrics when explicitly reported:
+  revenue, revenue_growth_pct, material_margin, material_margin_pct, operating_ebitda,
+  operating_ebitda_pct, nwc_days, roce_pct, net_debt.
+- Also extract SUPPORTING inputs when reported because code can derive missing rows:
+  material_cost, borrowings, cash_and_equivalents, ebit, capital_employed.
+- Synonyms:
+  revenue = revenue from operations / total income / sales;
+  material_cost = cost of materials consumed / raw material cost;
+  operating_ebitda = EBITDA / operating EBITDA / PBDIT / operating profit before depreciation;
+  nwc_days = net working capital days / working capital days;
+  roce_pct = ROCE / return on capital employed;
+  borrowings = gross debt / total debt / total borrowings.
 - If a metric/year is not in the evidence, simply omit it. NEVER estimate or fill gaps.
 Return JSON: {"cells": [{"metric": "revenue", "period": "FY24", "value": 15254.7,
   "unit": "INR crore", "evidence": [{"id": "E#", "quote": "verbatim incl. number"}]}]}"""
 
+_FIN_FALLBACK_SYS = """Extract reported financial figures using ONLY the evidence.
+Return strict JSON only: {"cells":[{"metric":"revenue","period":"FY25","value":123.4,
+"unit":"INR crore","evidence":[{"id":"E#","quote":"exact quote containing number"}]}]}.
+Metrics to extract if present: revenue, operating_ebitda, net_profit, borrowings,
+cash_and_equivalents, net_debt, roce_pct, nwc_days. Omit missing metrics."""
+
+
+def _merge_financial_cells(primary: list[FinancialCell], secondary: list[FinancialCell]) -> list[FinancialCell]:
+    """Keep primary values; fill only missing (metric, period) from secondary."""
+    seen = {(c.metric, c.period) for c in primary}
+    out = list(primary)
+    for cell in secondary:
+        key = (cell.metric, cell.period)
+        if key not in seen:
+            seen.add(key)
+            out.append(cell)
+    return out
+
 
 def run_financials_agent(ctx: RunContext, start_id: int) -> list[FinancialCell]:
     name = ctx.entity.canonical_name if ctx.entity else ctx.input_name
+    cells: list[FinancialCell] = []
+    n = start_id
+
+    if ctx.entity:
+        listed = ctx.entity.listing_status == "listed" and ctx.entity.ticker
+        if listed:
+            screener_cells, skip = fetch_screener_financials(
+                ctx, ctx.entity, ticker=ctx.entity.ticker, start_id=n
+            )
+            if screener_cells:
+                cells = screener_cells
+            elif skip:
+                ctx.note(f"[financials] screener.in: {skip}")
+
+        if not cells and ctx.entity.listing_status != "listed":
+            tofler_cells, skip = fetch_tofler_financials(ctx, ctx.entity, start_id=n)
+            if tofler_cells:
+                cells = tofler_cells
+            elif skip:
+                ctx.note(f"[financials] tofler.in: {skip}")
+
+        if cells:
+            for c in cells:
+                if c.id.startswith("fin-"):
+                    try:
+                        n = max(n, int(c.id.rsplit("-", 1)[-1]))
+                    except ValueError:
+                        pass
+
     queries = [
         f"{name} revenue from operations total income",
-        f"{name} EBITDA operating profit",
+        f"{name} cost of materials consumed raw material cost material margin",
+        f"{name} operating EBITDA PBDIT operating profit",
         f"{name} net profit profit after tax PAT",
-        f"{name} total borrowings net debt balance sheet",
+        f"{name} total borrowings cash equivalents net debt balance sheet",
         f"{name} financial highlights five year FY24 FY23 FY22",
-        f"{name} return on capital employed equity",
+        f"{name} return on capital employed ROCE working capital days",
     ]
-    chunks = ctx.store.search_multi(queries, k_each=5, k_total=14)
+    chunks = ctx.store.search_multi(queries, k_each=6, k_total=20)
     if not chunks:
+        if cells:
+            ctx.note("[financials] no filing evidence; using screener.in figures only")
+            return cells
         ctx.note("[financials] no evidence retrieved")
         return []
 
@@ -174,13 +241,16 @@ def run_financials_agent(ctx: RunContext, start_id: int) -> list[FinancialCell]:
     try:
         data = claude().complete_json(_FIN_SYS, user, max_tokens=2500)
     except Exception as e:  # noqa: BLE001
-        ctx.note(f"[financials] agent failed: {e}")
-        return []
+        ctx.note(f"[financials] expanded extraction failed ({e}); retrying compact prompt")
+        try:
+            data = claude().complete_json(_FIN_FALLBACK_SYS, user, max_tokens=1800)
+        except Exception as e2:  # noqa: BLE001
+            ctx.note(f"[financials] agent failed: {e2}")
+            return cells if cells else []
 
-    cells: list[FinancialCell] = []
-    n = start_id
+    extracted: list[FinancialCell] = []
     for item in data.get("cells", []) or []:
-        metric = (item.get("metric") or "").strip().lower()
+        metric = canonical_metric((item.get("metric") or "").strip())
         period = (item.get("period") or "").strip()
         ev = _attach_evidence(item.get("evidence"), idmap)
         val = item.get("value")
@@ -191,7 +261,7 @@ def run_financials_agent(ctx: RunContext, start_id: int) -> list[FinancialCell]:
         except (TypeError, ValueError):
             continue
         n += 1
-        cells.append(
+        extracted.append(
             FinancialCell(
                 id=f"fin-{n}", section=Section.financials,
                 text=f"{metric} {period}: {num} {item.get('unit', '')}".strip(),
@@ -200,54 +270,8 @@ def run_financials_agent(ctx: RunContext, start_id: int) -> list[FinancialCell]:
                 basis="reported", evidence=ev,
             )
         )
-    ctx.note(f"[financials] extracted {len(cells)} reported cells")
-    cells += _derive_metrics(cells, start_id=n)
-    return cells
-
-
-def _derive_metrics(reported: list[FinancialCell], start_id: int) -> list[FinancialCell]:
-    """Compute derived metrics (growth %, EBITDA margin) from reported cells.
-
-    Derived cells are clearly labeled basis='derived' and link to the base cells
-    they were computed from — we never present a calculation as a reported figure.
-    """
-    derived: list[FinancialCell] = []
-    n = start_id
-
-    def by_metric(m: str) -> dict[str, FinancialCell]:
-        return {c.period: c for c in reported if c.metric == m}
-
-    rev = by_metric("revenue")
-    if not rev:
-        rev = by_metric("total income") or by_metric("revenue from operations")
-
-    # Revenue growth % (period over prior period)
-    periods = sorted(rev.keys())
-    for prev, cur in zip(periods, periods[1:]):
-        a, b = rev[prev].numeric_value, rev[cur].numeric_value
-        if a and b and a != 0:
-            n += 1
-            g = round((b - a) / abs(a) * 100, 1)
-            derived.append(FinancialCell(
-                id=f"fin-{n}", section=Section.financials,
-                text=f"revenue growth {cur}: {g}%", claim_type=ClaimType.quantitative,
-                metric="revenue growth", period=cur, numeric_value=g, unit="%",
-                basis="derived", derived_from=[rev[prev].id, rev[cur].id],
-                evidence=[*rev[prev].evidence, *rev[cur].evidence],
-            ))
-
-    # EBITDA margin %
-    ebitda = by_metric("ebitda") or by_metric("operating profit")
-    for period, ec in ebitda.items():
-        rc = rev.get(period)
-        if rc and rc.numeric_value and ec.numeric_value is not None and rc.numeric_value != 0:
-            n += 1
-            margin = round(ec.numeric_value / rc.numeric_value * 100, 1)
-            derived.append(FinancialCell(
-                id=f"fin-{n}", section=Section.financials,
-                text=f"EBITDA margin {period}: {margin}%", claim_type=ClaimType.quantitative,
-                metric="ebitda margin", period=period, numeric_value=margin, unit="%",
-                basis="derived", derived_from=[ec.id, rc.id],
-                evidence=[*ec.evidence, *rc.evidence],
-            ))
-    return derived
+    ctx.note(f"[financials] extracted {len(extracted)} reported cells from filings")
+    extracted += derive_financial_metrics(extracted, start_id=n)
+    if cells:
+        return _merge_financial_cells(cells, extracted)
+    return extracted

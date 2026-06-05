@@ -195,6 +195,7 @@ class OnePager(BaseModel):
     entity: Entity
     overview: list[Claim] = Field(default_factory=list)
     financials: list[FinancialCell] = Field(default_factory=list)
+    financial_periods: list[str] = Field(default_factory=list)
     products: list[Claim] = Field(default_factory=list)
     clients: list[Claim] = Field(default_factory=list)
     gaps: list[Gap] = Field(default_factory=list)

@@ -4,79 +4,78 @@
 >
 > Resolved offline to Brakes India Private Limited, the unlisted Chennai-based auto-components and foundry company associated with the TVS group.
 
-*Every line is grounded in a retrievable source (see Sources). Confidence chips: 🟢 High · 🟡 Medium · 🔴 Low. Anything not verifiable is listed honestly under Gaps.*
+_Every line is grounded in a retrievable source (see Sources). Confidence chips: 🟢 High · 🟡 Medium · 🔴 Low. Anything not verifiable is listed honestly under Gaps._
 
 ## Company Overview
 
-- Brakes India Private Limited was incorporated on 09 November 1962. [S1] [S9] — 🟢 High
-- The company is registered at the Registrar of Companies, Chennai, with CIN U35999TN1962PTC004928. [S9] — 🔴 Low
-- Brakes India is the largest manufacturer of brake systems in India. [S6] — 🔴 Low
-- The company is part of the $2.5 billion T S Santhanam family group, with lineage from the erstwhile TVS Group. [S6] — 🔴 Low
-- Brakes India is headquartered in Chennai. [S6] — 🔴 Low
-- The company operates 15 manufacturing plants across India. [S6] — 🔴 Low
-- Brakes India serves local and multinational OEM customers across the light vehicle, commercial vehicle, tractors and off-highway segments. [S6] — 🔴 Low
-- The company has three main divisions: Brake division, Foundry division, and Polymer division. [S8] — 🔴 Low
-- Its product portfolio includes calipers, actuation, drum brakes, valves, hose ABS and brake fluid for passenger vehicles, S-cam, Hydraulic drum brakes, Disk brakes and Electro Magnetic Retarders for commercial vehicles, and Dry and Wet multiple plate disk brakes for agricultural tractors. [S8] — 🔴 Low
-- The company generated revenue of INR 7,550 crore for the financial year ending 31 March 2025. [S9] — 🔴 Low
-- As of 1 May 2025, the company had 10,238 employees. [S9] — 🔴 Low
-- The company has a well-equipped R&D centre capable of designing, developing, testing and validating products. [S6] — 🔴 Low
+- Brakes India Private Limited was incorporated on 09 November 1962. [S1] — 🟡 Med
+- Brakes India is a private limited company located in Tamil Nadu. [S1] — 🟡 Med
+- Brakes India is the leading supplier of braking systems in the Indian market and a global supplier of ferrous castings, for passenger vehicles, light commercial vehicles, heavy commercial vehicles & tractors. [S14] — 🟡 Med
+- Brakes India is promoted by the TSF Group, whose heritage dates back to 1911. [S2] — 🟡 Med
+- Brakes India has 21 manufacturing locations. [S2] — 🟡 Med
+- Brakes India has more than 10,000 employees. [S2] — 🟡 Med
+- Brakes India has an iron castings capacity of 200,000 tons. [S2] — 🟡 Med
+- Brakes India's revenue is approximately $910 million. [S2] — 🟡 Med
+- Brakes India's OEM segment accounts for 60–65% of standalone revenue, with leading customers including Tata Motors Ltd, Ashok Leyland Ltd, Maruti Suzuki India Ltd, and Mahindra and Mahindra. [S12] — 🔴 Low
+- Brakes India has a strong in-house R&D capability that includes state-of-the-art test facilities and an ARAI-certified high-speed test track built to international standards. [S14] — 🟡 Med
 
 ## Financial Overview
 
+| Metric (unit) | FY23 | FY24 | FY25 | Source · Conf |
+|---|---|---|---|---|
+| Revenue (INR crore) | — | — | — |   |
+| Revenue growth (%) | — | — | -1.0 | [S10] 🟡 Med |
+| Material margin (INR crore) | — | — | — |   |
+| Material margin (%) | — | — | — |   |
+| Operating EBITDA (INR crore) | 912 | 1,154 | 1,058 | [S10] 🟡 Med |
+| Operating EBITDA (%) | — | — | — |   |
+| Net working capital (days) | — | — | — |   |
+| ROCE (%) | 26.0 | 30.0 | 27.0 | [S10] 🟡 Med |
+| Net debt (INR crore) | — | — | — |   |
 
-| Metric (unit)                 | FY25  | Source · Conf |
-| ----------------------------- | ----- | ------------- |
-| Revenue (INR crore)           | 7,241 | [S1] 🟡 Med   |
-| Ebitda (INR crore)            | 898   | [S1] 🟡 Med   |
-| Net Profit (INR crore)        | 627   | [S1] 🟡 Med   |
-| Total Equity (INR crore)      | 2,845 | [S1] 🟡 Med   |
-| Ebitda Margin (%) *(derived)* | 12.4  | [S1] 🟡 Med   |
-
-
-*Cells marked ⚠️ have conflicting sources (see Gaps). '(derived)' rows are computed from the reported figures above and cite those same sources.*
+_Cells marked ⚠️ have conflicting sources (see Gaps). '(derived)' rows are computed from the reported figures above and cite those same sources._
 
 ## Select Products
 
-- Brakes India Private Limited manufactures disc brakes. [S1] [S8] — 🟢 High
-- Brakes India Private Limited manufactures drum brakes. [S1] [S8] — 🟢 High
-- Brakes India Private Limited manufactures hydraulic systems. [S1] — 🟡 Med
-- Brakes India Private Limited manufactures calipers. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures actuation systems. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures valves. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures hose ABS. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures S-cam brakes. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures Hydraulic drum brakes. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures Electro Magnetic Retarders. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures Dry multiple plate disk brakes. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures Wet multiple plate disk brakes. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures permanent mould ferrous castings. [S8] — 🔴 Low
-- Brakes India Private Limited manufactures Grey iron castings. [S8] — 🔴 Low
+- Brakes India Private Limited manufactures hydraulic systems [S1] — 🟡 Med
+- Brakes India Private Limited manufactures calipers [S6] — 🔴 Low
+- Brakes India Private Limited manufactures actuation systems [S6] — 🔴 Low
+- Brakes India Private Limited manufactures ABS systems [S6] — 🔴 Low
+- Brakes India Private Limited manufactures ferrous castings [S6] — 🔴 Low
+- Brakes India Private Limited manufactures polymer based components [S6] — 🔴 Low
 
 ## Select Clients
 
-- Daimler is a customer of Brakes India Private Limited. [S8] — 🔴 Low
-- MAN is a customer of Brakes India Private Limited. [S8] — 🔴 Low
-- TATA is a customer of Brakes India Private Limited. [S8] — 🔴 Low
-- Mahindra is a customer of Brakes India Private Limited. [S8] — 🔴 Low
+- _Not found in available sources._
+
+## Gaps & Unverifiable Items (honest 'not found')
+
+- **[financials]** Some canonical 3-FY financial table cells could not be verified. — _Missing cells are shown as dashes rather than estimated._
+- **[clients]** No clients could be verified from available sources. — _No source explicitly named customers; logos alone are not evidence._
 
 ## Sources
 
-- **[S1]** [Brakes India Financials | Company Details | Tofler](https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928) — regulatory_filing, tier 1, paywalled
-- **[S2]** [Homepage - Brakes India](https://www.brakesindia.com) — company_website, tier 3, public
-- **[S3]** [Page not found - Brakes India](https://www.brakesindia.com/products/) — company_website, tier 3, public
-- **[S4]** [Compliance & Disclosures – Brakes India](https://www.brakesindia.com/compliance-disclosures/) — company_website, tier 3, public
-- **[S5]** [Homepage - Brakes India](https://www.brakesindia.com/) — company_website, tier 3, public
-- **[S6]** [Brakes India: Leading Automotive Component Solutions | TVS Girling](https://www.tvsgirling.com/) — other, tier 5, public
-- **[S7]** [Brakes India | LinkedIn](https://in.linkedin.com/company/brakes-india) — other, tier 5, public
-- **[S8]** [Brakes India Private Limited - Manufacturer from Chennai, India | About Us](https://www.indiamart.com/brakes-india-ltd-chennai/aboutus.html) — other, tier 5, public
-- **[S9]** [BRAKES INDIA PRIVATE LIMITED - 2026 Company Profile & Financials - Tracxn](https://tracxn.com/d/legal-entities/india/brakes-india-private-limited/__MRAQ1il_N6qb2gKxiTAE8X55WTOotHcYmN_2JjtVCRc) — other, tier 5, public
+- **[S1]** [Brakes India Financials | Company Details | Tofler](https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928) — regulatory_filing, tier 1, paywalled, snapshot: `research/pages/brakes_india_financials_company_details_tofler_c1ee07b294.md`
+- **[S10]** [[PDF] Executive Summary FY25 - TSF Investments](https://tsfinvestments.com/wp-content/uploads/2025/07/Performance-Highlights-FY25.pdf) — annual_report, tier 1, public, snapshot: `research/documents/pdf_executive_summary_fy25_tsf_investments_f9ae24c17e.pdf`
+- **[S11]** [Compliance & Disclosures – Brakes India](https://www.brakesindia.com/compliance-disclosures) — company_website, tier 3, public, snapshot: `research/pages/compliance_disclosures_brakes_india_a666e9777d.md`
+- **[S12]** [Rating Rationale](https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/BrakesIndiaPrivateLimited_June%2026_%202025_RR_369726.html) — other, tier 5, public, snapshot: `research/pages/rating_rationale_cbd791474c.md`
+- **[S13]** [[PDF] Annual Return - Brakes India](https://www.brakesindia.com/wp-content/uploads/2023/09/Annual-Return-FY-21-22.pdf) — annual_report, tier 1, public, snapshot: `research/documents/pdf_annual_return_brakes_india_79d26b0231.pdf`
+- **[S14]** [[PDF] Investor Presentation FY24 - TSF Investments](https://tsfinvestments.com/wp-content/uploads/2024/06/Pefromance-Highlights-FY24-1.pdf) — annual_report, tier 1, public, snapshot: `research/documents/pdf_investor_presentation_fy24_tsf_investments_6fd030e2c8.pdf`
+- **[S15]** [[PDF] ASK-Automotive-Investor-Presentation-Q4-FY25.pdf](https://askbrake.com/wp-content/uploads/ASK-Automotive-Investor-Presentation-Q4-FY25.pdf) — investor_presentation, tier 2, public, snapshot: `research/documents/pdf_ask_automotive_investor_presentation_q4_fy25_pdf_063dc7b654.pdf`
+- **[S2]** [Homepage - Brakes India](https://www.brakesindia.com) — company_website, tier 3, public, snapshot: `research/pages/homepage_brakes_india_b12edc2073.md`
+- **[S3]** [Page not found - Brakes India](https://www.brakesindia.com/products/) — company_website, tier 3, public, snapshot: `research/pages/page_not_found_brakes_india_151c507ea4.md`
+- **[S4]** [Light Vehicle Braking Solutions – Brakes India](https://www.brakesindia.com/light-vehicles-business-unit) — company_website, tier 3, public, snapshot: `research/pages/light_vehicle_braking_solutions_brakes_india_d624903343.md`
+- **[S5]** [Brakes India Private Limited  Information - Brakes India Private Limited  Company Profile, Brakes India Private Limited  News on The Economic Times](https://economictimes.indiatimes.com/company/brakes-india-private-limited/U35999TN1962PTC004928) — news, tier 3, public, snapshot: `research/pages/brakes_india_private_limited_information_brakes_india_private_limited_company_pr_775b69e2ae.md`
+- **[S6]** [Company Profile - Brakes India Pvt Ltd](https://chemdmart.com/company-profile/brakes-india-pvt-ltd) — other, tier 5, public, snapshot: `research/pages/company_profile_brakes_india_pvt_ltd_01af0b0c93.md`
+- **[S7]** [Brakes India: Leading Automotive Component Solutions | TVS Girling](https://www.tvsgirling.com) — other, tier 5, public, snapshot: `research/pages/brakes_india_leading_automotive_component_solutions_tvs_girling_6a8f3092fa.md`
+- **[S8]** [Brakes India Pvt. Ltd. | 544 customers and 986 suppliers](https://en.abrams.wiki/Brakes-India-Pvt-Ltd/3--x0q0-L0EwYqkYuqii0_9A) — other, tier 5, public, snapshot: `research/pages/brakes_india_pvt_ltd_544_customers_and_986_suppliers_d7d03496e0.md`
+- **[S9]** [[PDF] Siddheshw ar Sunil Kadane - NSE](https://nsearchives.nseindia.com/corporate/MENONBE_29102025134506_FILING-INV-PRES-291025.pdf) — annual_report, tier 1, public, snapshot: `research/documents/pdf_siddheshw_ar_sunil_kadane_nse_3ec27bc357.pdf`
 
 ## Coverage / Self-Check
 
-- Verified claims emitted: **35** · conflicted: 0 · drafted-but-dropped (failed verification): 10
-- Confidence mix: {'High': 3, 'Medium': 6, 'Low': 26}
-- By section: {'overview': 12, 'financials': 5, 'products': 14, 'clients': 4}
-- Honest gaps recorded: 0
+- Verified claims emitted: **23** · conflicted: 0 · drafted-but-dropped (failed verification): 17
+- Confidence mix: {'High': 0, 'Medium': 17, 'Low': 6}
+- By section: {'overview': 10, 'financials': 7, 'products': 6, 'clients': 0}
+- Honest gaps recorded: 2
 - Models: writer=claude-sonnet-4-6, verifier=grok-4.3
-- API calls: {'ddg': 2, 'firecrawl': 8, 'claude': 4, 'grok': 6}
-
+- API calls: {'tavily': 5, 'claude': 4, 'grok': 5}

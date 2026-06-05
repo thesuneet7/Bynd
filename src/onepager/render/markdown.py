@@ -5,6 +5,15 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from ..financials import (
+    FINANCIAL_ROW_ORDER,
+    FINANCIAL_UNITS,
+    display_periods,
+    financial_label,
+    footnote_superscript,
+    period_key,
+    render_derivation_footnotes,
+)
 from ..schemas import ClaimStatus, FinancialCell, OnePager, Section
 
 _CHIP = {"High": "🟢 High", "Medium": "🟡 Med", "Low": "🔴 Low"}
@@ -83,6 +92,8 @@ def render_markdown(op: OnePager) -> str:
         meta = [s.source_type.value, f"tier {s.reliability_tier}", s.access]
         if s.publication_date:
             meta.append(s.publication_date)
+        if s.snapshot_path:
+            meta.append(f"snapshot: `{s.snapshot_path}`")
         L.append(f"- **[{s.id}]** [{s.title or s.url}]({s.url}) — {', '.join(meta)}")
     L.append("")
 
@@ -108,23 +119,19 @@ def _render_financials(op: OnePager) -> str:
     if not cells:
         return "_No multi-year financial figures could be verified from available sources._"
 
-    periods = sorted({c.period for c in cells}, key=_period_key)
+    periods = op.financial_periods or display_periods([c.period for c in cells], count=3, skip_latest=1)
     by_metric: dict[str, dict[str, FinancialCell]] = defaultdict(dict)
-    order: list[str] = []
     for c in cells:
-        if c.metric not in by_metric:
-            order.append(c.metric)
         by_metric[c.metric][c.period] = c
 
     header = "| Metric (unit) | " + " | ".join(periods) + " | Source · Conf |"
     sep = "|" + "---|" * (len(periods) + 2)
     rows = [header, sep]
-    for metric in order:
+    for metric in FINANCIAL_ROW_ORDER:
         row_cells = by_metric[metric]
-        any_cell = next(iter(row_cells.values()))
-        unit = any_cell.unit
-        label = f"{metric.title()} ({unit})"
-        if any_cell.basis == "derived":
+        unit = FINANCIAL_UNITS.get(metric) or (next(iter(row_cells.values())).unit if row_cells else "")
+        label = financial_label(metric, unit)
+        if any(c.basis == "derived" for c in row_cells.values()):
             label += " _(derived)_"
         vals = []
         cites = set()
@@ -132,18 +139,47 @@ def _render_financials(op: OnePager) -> str:
         for p in periods:
             cell = row_cells.get(p)
             if cell is None:
-                vals.append("—")
+                sup = footnote_superscript(cells, periods, metric, p)
+                vals.append(f"—{sup}" if sup else "—")
             else:
                 flag = "⚠️" if cell.status == ClaimStatus.conflicted else ""
-                vals.append(f"{_fmt(cell.numeric_value)}{flag}")
+                sup = footnote_superscript(cells, periods, metric, p) if cell.basis == "derived" else ""
+                vals.append(f"{_fmt(cell.numeric_value)}{flag}{sup}")
                 cites |= {e.source_id for e in cell.evidence}
                 conf_labels.add(cell.confidence.label.value)
         cite_str = " ".join(f"[{s}]" for s in sorted(cites))
         conf = min(conf_labels, key=lambda x: ["High", "Medium", "Low"].index(x)) if conf_labels else ""
         rows.append(f"| {label} | " + " | ".join(vals) + f" | {cite_str} {_CHIP.get(conf,'')} |")
     note = "\n\n_Cells marked ⚠️ have conflicting sources (see Gaps). '(derived)' rows are " \
-           "computed from the reported figures above and cite those same sources._"
-    return "\n".join(rows) + note
+           "computed from the reported figures above and cite those same sources. " \
+           "Numbered markers (¹ ² …) refer to derivation footnotes below._"
+    footnotes = render_derivation_footnotes(
+        cells,
+        periods,
+        source_url=_financial_source_url(cells),
+        provider_label=_financial_provider_label(cells),
+    )
+    return "\n".join(rows) + note + ("\n" + "\n".join(footnotes) if footnotes else "")
+
+
+def _financial_source_url(cells: list[FinancialCell]) -> str | None:
+    for c in cells:
+        for ev in c.evidence:
+            url = (ev.locator or {}).get("url")
+            if url:
+                return url
+    return None
+
+
+def _financial_provider_label(cells: list[FinancialCell]) -> str | None:
+    for c in cells:
+        for ev in c.evidence:
+            provider = (ev.locator or {}).get("provider")
+            if provider == "screener":
+                return "screener.in"
+            if provider == "tofler":
+                return "tofler.in"
+    return None
 
 
 def _fmt(v) -> str:
@@ -155,5 +191,4 @@ def _fmt(v) -> str:
 
 
 def _period_key(p: str):
-    digits = "".join(ch for ch in p if ch.isdigit())
-    return int(digits) if digits else 0
+    return period_key(p)

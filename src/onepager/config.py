@@ -45,6 +45,11 @@ class Settings:
     firecrawl_api_key: str = os.getenv("FIRECRAWL_API_KEY", "")
     llamaparse_api_key: str = os.getenv("LLAMAPARSE_API_KEY", "")
 
+    # Screener.in (optional — unlocks Key Insights / Read More commentary)
+    screener_username: str = os.getenv("SCREENER_USERNAME", "") or os.getenv("SCREENER_EMAIL", "")
+    screener_password: str = os.getenv("SCREENER_PASSWORD", "")
+    # httpx | browser | auto  (auto = httpx then Playwright fallback)
+    screener_login: str = os.getenv("SCREENER_LOGIN", "auto")
     # Search: ddg (free) | tavily (default) | exa | ddg_then_tavily |
     # exa_then_tavily | exa_ddg_then_tavily
     search_provider: str = os.getenv("SEARCH_PROVIDER", "tavily")
