@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from onepager.financials import FINANCIAL_ROW_ORDER, fetch_screener_financials
 from onepager.financials.screener import fetch_screener_html, parse_screener_page
 from onepager.financials.screener_api import discover_schedule_parents, fetch_all_schedules
-from onepager.pipeline.context import RunContext
+from onepager.context import RunContext
 from onepager.schemas import Entity
 
 

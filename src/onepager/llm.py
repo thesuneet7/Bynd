@@ -1,14 +1,4 @@
-"""LLM clients.
-
-Two vendors on purpose:
-  * Claude  -> writer / extractor / orchestrator (the model that PROPOSES claims)
-  * Grok    -> independent verifier (the model that GRADES entailment)
-
-Using different vendors for write vs. verify means a fact one model hallucinates
-is unlikely to be silently rubber-stamped by the other.
-
-Both clients enforce budget caps and parse strict JSON robustly.
-"""
+"""Claude client for structured extraction from filings."""
 from __future__ import annotations
 
 import json
@@ -24,7 +14,6 @@ _JSON_BLOCK = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL)
 
 
 def extract_json(text: str) -> Any:
-    """Best-effort JSON extraction from an LLM response (handles fences / prose)."""
     text = (text or "").strip()
     if not text:
         raise ValueError("empty LLM response")
@@ -34,7 +23,6 @@ def extract_json(text: str) -> Any:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        # Grab the outermost JSON object/array.
         for opener, closer in (("{", "}"), ("[", "]")):
             start = text.find(opener)
             end = text.rfind(closer)
@@ -46,9 +34,6 @@ def extract_json(text: str) -> Any:
         raise
 
 
-# --------------------------------------------------------------------------- #
-# Claude (writer)
-# --------------------------------------------------------------------------- #
 class ClaudeClient:
     def __init__(self) -> None:
         SETTINGS.require("claude_api_key")
@@ -86,41 +71,7 @@ class ClaudeClient:
         return extract_json(self.complete(sys2, user, **kw))
 
 
-# --------------------------------------------------------------------------- #
-# Grok (verifier) — OpenAI-compatible endpoint
-# --------------------------------------------------------------------------- #
-class GrokClient:
-    def __init__(self) -> None:
-        SETTINGS.require("xai_api_key")
-        from openai import OpenAI
-
-        self._c = OpenAI(api_key=SETTINGS.xai_api_key, base_url=SETTINGS.xai_base_url, timeout=120.0)
-
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
-    def complete(self, system: str, user: str, *, max_tokens: Optional[int] = None, temperature: float = 0.0) -> str:
-        BUDGET.charge("grok")
-        resp = self._c.chat.completions.create(
-            model=SETTINGS.xai_model,
-            max_tokens=max_tokens or SETTINGS.llm_max_tokens,
-            temperature=temperature,
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ],
-        )
-        usage = getattr(resp, "usage", None)
-        if usage:
-            BUDGET.add_tokens("grok", getattr(usage, "prompt_tokens", 0), getattr(usage, "completion_tokens", 0))
-        return (resp.choices[0].message.content or "").strip()
-
-    def complete_json(self, system: str, user: str, **kw: Any) -> Any:
-        sys2 = system + "\n\nRespond with VALID JSON only. No prose, no markdown fences."
-        return extract_json(self.complete(sys2, user, **kw))
-
-
-# Lazy singletons (so importing the module doesn't require keys until used).
-_claude: Optional[ClaudeClient] = None
-_grok: Optional[GrokClient] = None
+_claude: ClaudeClient | None = None
 
 
 def claude() -> ClaudeClient:
@@ -128,10 +79,3 @@ def claude() -> ClaudeClient:
     if _claude is None:
         _claude = ClaudeClient()
     return _claude
-
-
-def grok() -> GrokClient:
-    global _grok
-    if _grok is None:
-        _grok = GrokClient()
-    return _grok

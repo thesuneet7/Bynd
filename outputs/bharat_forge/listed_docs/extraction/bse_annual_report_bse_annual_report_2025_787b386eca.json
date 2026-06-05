@@ -1,0 +1,572 @@
+{
+  "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+  "title": "BSE Annual Report 2025",
+  "category": "annual_report",
+  "fy_label": "FY25",
+  "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+  "pages_parsed": 262,
+  "sections": [
+    {
+      "section": "Products",
+      "start_page": 6,
+      "end_page": 6,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 16,
+      "end_page": 16,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 21,
+      "end_page": 36,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 39,
+      "end_page": 39,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 46,
+      "end_page": 46,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 49,
+      "end_page": 52,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 56,
+      "end_page": 56,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 62,
+      "end_page": 63,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 73,
+      "end_page": 73,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 81,
+      "end_page": 83,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 88,
+      "end_page": 89,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 96,
+      "end_page": 101,
+      "bucket": "Products"
+    },
+    {
+      "section": "Products",
+      "start_page": 141,
+      "end_page": 141,
+      "bucket": "Products"
+    },
+    {
+      "section": "Customers",
+      "start_page": 9,
+      "end_page": 9,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 21,
+      "end_page": 27,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 32,
+      "end_page": 33,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 36,
+      "end_page": 36,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 45,
+      "end_page": 50,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 62,
+      "end_page": 62,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 81,
+      "end_page": 84,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 91,
+      "end_page": 93,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 98,
+      "end_page": 103,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 158,
+      "end_page": 158,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 168,
+      "end_page": 168,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Customers",
+      "start_page": 187,
+      "end_page": 188,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Operations",
+      "start_page": 9,
+      "end_page": 11,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 20,
+      "end_page": 34,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 37,
+      "end_page": 52,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 56,
+      "end_page": 56,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 61,
+      "end_page": 62,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 69,
+      "end_page": 69,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 72,
+      "end_page": 72,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 75,
+      "end_page": 75,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 81,
+      "end_page": 84,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 88,
+      "end_page": 88,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 91,
+      "end_page": 99,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 103,
+      "end_page": 103,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 141,
+      "end_page": 141,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 214,
+      "end_page": 214,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 11,
+      "end_page": 11,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 50,
+      "end_page": 50,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 56,
+      "end_page": 56,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 59,
+      "end_page": 59,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 62,
+      "end_page": 62,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 69,
+      "end_page": 69,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 84,
+      "end_page": 84,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 88,
+      "end_page": 88,
+      "bucket": "Competitors"
+    },
+    {
+      "section": "Risks",
+      "start_page": 21,
+      "end_page": 21,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 32,
+      "end_page": 32,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 37,
+      "end_page": 37,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 41,
+      "end_page": 42,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 48,
+      "end_page": 50,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 67,
+      "end_page": 71,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 74,
+      "end_page": 74,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 84,
+      "end_page": 84,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 89,
+      "end_page": 92,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 95,
+      "end_page": 95,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 98,
+      "end_page": 103,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 145,
+      "end_page": 147,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 150,
+      "end_page": 150,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 170,
+      "end_page": 172,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 225,
+      "end_page": 227,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 230,
+      "end_page": 230,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 233,
+      "end_page": 233,
+      "bucket": "Risks"
+    },
+    {
+      "section": "Risks",
+      "start_page": 256,
+      "end_page": 256,
+      "bucket": "Risks"
+    }
+  ],
+  "products": [
+    {
+      "name": "landing gear components",
+      "evidence": "Announced advanced aerospace component facility in Pune for manufacturing aero structure and landing gear components.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 22,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "ATAGS platforms",
+      "evidence": "Signed contract with Government of India to supply 184 ATAGS platforms for ~C4,000 crore.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 22,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "chassis components",
+      "evidence": "Among the world's leading manufacturers of powertrain and chassis components, with advanced design, dual-shore manufacturing, and full-service supply capabilities",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "engine components for railway applications",
+      "evidence": "Leading supplier of engine components for railway applications in domestic and global markets",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "turbochargers for rail engines",
+      "evidence": "Capability to manufacture indigenously developed turbochargers for rail engines",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "artillery systems",
+      "evidence": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "protected and armored vehicles",
+      "evidence": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "naval utility products",
+      "evidence": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 26,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "steel forgings",
+      "evidence": "From being a supplier of steel forgings, we have evolved as a manufacturing conglomerate with expertise across steel, aluminum, ferrous, titanium and other exotic alloys.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 24,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "aluminum castings",
+      "evidence": "In addition to Forging, we aim to increase our content per customer via supply of ferrous and aluminum castings.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 29,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "EV powertrain systems",
+      "evidence": "Developing full-stack EV powertrain systems.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 29,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "Electronic products manufacturing line",
+      "evidence": "Electronic products manufacturing line operational. Utilization likely to receive a step up with server manufacturing at the recently inaugurated SMT line.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 29,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "underwater systems",
+      "evidence": "Collaboration to strengthen capabilities in design and manufacture of underwater systems.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 22,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    }
+  ],
+  "customers": [
+    {
+      "name": "Government of India",
+      "evidence": "Signed contract with Government of India to supply 184 ATAGS platforms for ~C4,000 crore.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "customers",
+      "page": 22,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    },
+    {
+      "name": "EdgeLabs SpA",
+      "evidence": "KSSL purchased 25% stake in EdgeLabs SpA. Collaboration to strengthen capabilities in design and manufacture of underwater systems.",
+      "source": "BSE Annual Report 2025 FY25",
+      "confidence": 0.0,
+      "bucket": "customers",
+      "page": 22,
+      "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "verified": true
+    }
+  ],
+  "errors": [
+    "verification rejected 5 ungrounded LLM proposals"
+  ]
+}

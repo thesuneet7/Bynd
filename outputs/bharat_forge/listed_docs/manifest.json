@@ -1,0 +1,179 @@
+{
+  "company": "Bharat Forge Limited",
+  "ticker": "BHARATFORG",
+  "bse_scrip": "500493",
+  "website": "http://www.bharatforge.com",
+  "fetched_at": "2026-06-05T12:27:25.604370+00:00",
+  "documents": [
+    {
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5f41eef7-88ba-4b5c-be68-cdc1f4a6aa74.pdf",
+      "title": "BSE Annual Report 2025",
+      "category": "annual_report",
+      "source": "bse",
+      "report_year": 2025,
+      "fy_label": "FY25",
+      "published": "2025-07-15",
+      "status": "saved",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "sha256": "787b386eca94b473e2a748c48570ed7f13f9ae716c1108b5f70a2cae867b13b2",
+      "file_size": 11779079,
+      "error": "",
+      "meta": {
+        "file_name": "5f41eef7-88ba-4b5c-be68-cdc1f4a6aa74.pdf.pdf"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604231+00:00"
+    },
+    {
+      "url": "https://nsearchives.nseindia.com/annual_reports/AR_26934_BHARATFORG_2024_2025_A_15072025143248.pdf",
+      "title": "NSE Annual Report 2024-2025",
+      "category": "annual_report",
+      "source": "nse",
+      "report_year": 2025,
+      "fy_label": "FY25",
+      "published": "2025-07-15",
+      "status": "skipped_duplicate",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+      "sha256": "787b386eca94b473e2a748c48570ed7f13f9ae716c1108b5f70a2cae867b13b2",
+      "file_size": 11779079,
+      "error": "",
+      "meta": {
+        "fromYr": "2024",
+        "toYr": "2025"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604290+00:00"
+    },
+    {
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/62cec6c2-4017-448e-b67a-2072cc1c96f6.pdf",
+      "title": "BSE Annual Report 2024",
+      "category": "annual_report",
+      "source": "bse",
+      "report_year": 2024,
+      "fy_label": "FY24",
+      "published": "2024-07-16",
+      "status": "saved",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+      "sha256": "ffe74432f008ad2ce7c9ae85bcd14bceddf6c2553d30d6f6f7a261bc587eb68f",
+      "file_size": 13895861,
+      "error": "",
+      "meta": {
+        "file_name": "62cec6c2-4017-448e-b67a-2072cc1c96f6.pdf.pdf"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604298+00:00"
+    },
+    {
+      "url": "https://nsearchives.nseindia.com/annual_reports/AR_24524_BHARATFORG_2023_2024_16072024173558.pdf",
+      "title": "NSE Annual Report 2023-2024",
+      "category": "annual_report",
+      "source": "nse",
+      "report_year": 2024,
+      "fy_label": "FY24",
+      "published": "2024-07-16",
+      "status": "skipped_duplicate",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+      "sha256": "ffe74432f008ad2ce7c9ae85bcd14bceddf6c2553d30d6f6f7a261bc587eb68f",
+      "file_size": 13895861,
+      "error": "",
+      "meta": {
+        "fromYr": "2023",
+        "toYr": "2024"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604304+00:00"
+    },
+    {
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4f998b3b-2131-45d8-9b54-de7e34960f48.pdf",
+      "title": "BSE Annual Report 2023",
+      "category": "annual_report",
+      "source": "bse",
+      "report_year": 2023,
+      "fy_label": "FY23",
+      "published": "2023-07-17",
+      "status": "saved",
+      "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+      "sha256": "a31631bd270c0341043209505d88336d96537f5d35727a4a76a8bad458930bd9",
+      "file_size": 7712599,
+      "error": "",
+      "meta": {
+        "file_name": "\\4f998b3b-2131-45d8-9b54-de7e34960f48.pdf.pdf"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604323+00:00"
+    },
+    {
+      "url": "https://nsearchives.nseindia.com/annual_reports/AR_22401_BHARATFORG_2022_2023_17072023182153_07172023190008.zip",
+      "title": "NSE Annual Report 2022-2023",
+      "category": "annual_report",
+      "source": "nse",
+      "report_year": 2023,
+      "fy_label": "FY23",
+      "published": null,
+      "status": "saved",
+      "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+      "sha256": "3aa0e25d3f7fe77fa9944be43a8a6e0e488eab5b543d0bd4b49fb68c986e75ab",
+      "file_size": 7469064,
+      "error": "",
+      "meta": {
+        "fromYr": "2022",
+        "toYr": "2023"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604330+00:00"
+    },
+    {
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a0900348-25e7-4f6f-8516-9eb221cd9655.pdf",
+      "title": "Earnings Update For Q4 Of FY 2023-24",
+      "category": "investor_presentation",
+      "source": "bse",
+      "report_year": null,
+      "fy_label": null,
+      "published": "2024-05-08",
+      "status": "saved",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "sha256": "2773cd3939e1b0bed4077251a54323bca03a4b4cda26376220eb09269b6bc7c0",
+      "file_size": 1252708,
+      "error": "",
+      "meta": {
+        "attachment": "a0900348-25e7-4f6f-8516-9eb221cd9655.pdf",
+        "investor_presentation": null,
+        "subcat": "General",
+        "headline": "Earnings Update for Q4 of FY 2023-24"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604337+00:00"
+    },
+    {
+      "url": "https://nsearchives.nseindia.com/corporate/ANILSHINDE_11112025125109_SEIntimationBM.pdf",
+      "title": "Investor Presentation",
+      "category": "investor_presentation",
+      "source": "nse",
+      "report_year": null,
+      "fy_label": null,
+      "published": "2025-11-11",
+      "status": "saved",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "sha256": "e67ddc5acbf7f40a9b42fd51af9960fd3bbccba5507db210522abc8d81c94515",
+      "file_size": 1074519,
+      "error": "",
+      "meta": {
+        "desc": "Investor Presentation",
+        "attchmntText": "Bharat Forge Limited has informed the Exchange about Investor Presentation"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604358+00:00"
+    },
+    {
+      "url": "https://nsearchives.nseindia.com/corporate/ANILSHINDE_12022026133309_SEIntimationBM.pdf",
+      "title": "Investor Presentation",
+      "category": "investor_presentation",
+      "source": "nse",
+      "report_year": null,
+      "fy_label": null,
+      "published": "2026-02-12",
+      "status": "saved",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_13994db7e8.pdf",
+      "sha256": "13994db7e85d7a22e9f68b24495a4e68d7ca773df213a65e5766f8776838460f",
+      "file_size": 705345,
+      "error": "",
+      "meta": {
+        "desc": "Investor Presentation",
+        "attchmntText": "Bharat Forge Limited has informed the Exchange about Investor Presentation"
+      },
+      "retrieved_at": "2026-06-05T12:27:25.604365+00:00"
+    }
+  ]
+}

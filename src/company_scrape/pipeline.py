@@ -17,8 +17,9 @@ from onepager.financials import (
     FINANCIAL_UNITS,
     financial_label,
 )
+from onepager.financials.overview import ProviderOverview
 from onepager.financials.screener_session import clear_session_cache, get_screener_client
-from onepager.pipeline.context import RunContext
+from onepager.context import RunContext
 from onepager.schemas import Entity, FinancialCell
 
 
@@ -27,6 +28,7 @@ class ScrapeResult:
     entity: Entity
     provider: str
     url: str
+    overview: ProviderOverview | None
     overview_markdown: list[str]
     financials_markdown: list[str]
     cells: list[FinancialCell]
@@ -131,6 +133,7 @@ def run_company_scrape(
         entity=entity,
         provider=provider,
         url=url,
+        overview=overview,
         overview_markdown=render_overview_markdown(overview),
         financials_markdown=fin_md,
         cells=cells,

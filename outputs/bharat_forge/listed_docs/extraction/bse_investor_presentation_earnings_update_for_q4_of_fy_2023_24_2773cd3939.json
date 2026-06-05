@@ -1,0 +1,149 @@
+{
+  "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+  "title": "Earnings Update For Q4 Of FY 2023-24",
+  "category": "investor_presentation",
+  "fy_label": "",
+  "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+  "pages_parsed": 16,
+  "sections": [
+    {
+      "section": "Products",
+      "start_page": 3,
+      "end_page": 5,
+      "bucket": "Products"
+    },
+    {
+      "section": "Customers",
+      "start_page": 3,
+      "end_page": 3,
+      "bucket": "Customers"
+    },
+    {
+      "section": "Operations",
+      "start_page": 3,
+      "end_page": 3,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 12,
+      "end_page": 12,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 15,
+      "end_page": 15,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Competitors",
+      "start_page": 6,
+      "end_page": 6,
+      "bucket": "Competitors"
+    }
+  ],
+  "products": [
+    {
+      "name": "Artillery systems",
+      "evidence": "The company secured new orders worth Rs 4,494 Crores across Artillery systems, Armored vehicles and consumables.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 3,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "Armored vehicles",
+      "evidence": "The company secured new orders worth Rs 4,494 Crores across Artillery systems, Armored vehicles and consumables.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 3,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "defence export orders",
+      "evidence": "to Rs 2,469 Crores. A key driver of the strong performance was the fulfilment of defence export orders won by KSSL and the continued strong ramp-up of exports business across all business segments except Oil",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 3,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "industrial casting",
+      "evidence": "In FY24, the industrial casting vertical recorded a strong performance with topline growing by 28%, EBITDA growth of 57% and PBT doubling compared to FY23.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 3,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "AI/Digital manufacturing center",
+      "evidence": "We have set up an AI/Digital manufacturing center which will catalyze the engineering/ manufacturing activities and enable improvement in productivity and shorten time to market products.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 3,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "Passenger vehicle exports",
+      "evidence": "Revenues at Rs 23,286 million in Q4FY24 grew by 16.6% as compared to Q4 FY23 driven by execution on defence export order and Passenger vehicle exports.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 4,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "Commercial Vehicles",
+      "evidence": "Commercial Vehicles\nAutomotive Business: FY24 was an year of consolidation for the MHCV industry in India after two years of spectacular growth. BFL too saw mild revenue accretion in its CV business.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "Passenger Vehicles",
+      "evidence": "Passenger Vehicles\nThe premiumization trend in the PV segment continues, with Utility vehicles now accounting for more than 50% of the sales.",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    },
+    {
+      "name": "Industrial",
+      "evidence": "13 | # Industrial Industrials Business: The Industrial segment saw its revenue rise 72% in FY24. The sharp rise was driven by supply of components &#x26; products for defence application. Apart from defence, green s",
+      "source": "Earnings Update For Q4 Of FY 2023-24",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+      "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+      "verified": true
+    }
+  ],
+  "customers": [],
+  "errors": []
+}

@@ -24,7 +24,7 @@ from .tofler import (
 )
 
 if TYPE_CHECKING:
-    from ..pipeline.context import RunContext
+    from ..context import RunContext
 
 
 @dataclass
@@ -243,11 +243,6 @@ def fetch_provider_overview(ctx: RunContext, entity: Entity, *, provider: str | 
     if provider == "tofler" or (provider is None and entity.listing_status != "listed"):
         return fetch_tofler_overview(ctx, entity)
     return None
-
-
-def ingest_provider_overview(ctx: RunContext) -> int:
-    """Deprecated: use the standalone `company-scrape` CLI instead of the LLM one-pager."""
-    return 0
 
 
 def render_overview_markdown(overview: ProviderOverview | None) -> list[str]:

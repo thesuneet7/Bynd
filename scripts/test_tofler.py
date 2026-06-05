@@ -10,7 +10,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from onepager.financials import FINANCIAL_ROW_ORDER, fetch_tofler_financials
 from onepager.financials.tofler import resolve_tofler_company
-from onepager.pipeline.context import RunContext
+from onepager.context import RunContext
 from onepager.schemas import Entity
 
 

@@ -1,0 +1,1729 @@
+{
+  "company": "Bharat Forge Limited",
+  "ticker": "BHARATFORG",
+  "products": [
+    {
+      "product": "Artillery Gun System",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 6,
+          "quote": "Kalyani Strategic Systems Ltd. secured its maiden export order of USD 155.5 million for Artillery Gun System."
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 8,
+          "quote": "bagging an export order of USD 155.5 million for supplying artillery gun system, which will be an indigenously developed and manufactured product with 100% intellectual property owned by us."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 6,
+          "quote": "Kalyani Strategic Systems Ltd. secured its maiden export order of USD 155.5 million for Artillery Gun System."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 8,
+          "quote": "bagging an export order of USD 155.5 million for supplying artillery gun system, which will be an indigenously developed and manufactured product with 100% intellectual property owned by us."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        6,
+        8
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "E-Bike",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 9,
+          "quote": "KPTL successfully started its first micro-factory in the e-mobility space during the year, for assembly of E-Bike catering to Tork Motors."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "KPTL successfully started its first micro-factory in the e-mobility space during the year, for assembly of E-Bike catering to Tork Motors."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "aluminum forgings",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 29,
+          "quote": "The overseas business has significantly graduated from steel to aluminum forgings."
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 8,
+          "quote": "The overseas businesses, which are facing challenges, have taken a pivot from steel to aluminum forgings. With our global aluminum forging units now operational, we expect the benefits to start coming in as they begin to stabilize in FY 2024."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 8,
+          "quote": "The overseas businesses, which are facing challenges, have taken a pivot from steel to aluminum forgings. With our global aluminum forging units now operational, we expect the benefits to start coming in as they begin to stabilize in FY 2024."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        8,
+        29
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "armored vehicles",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "systems, AI &#x26; data analytics) and platform/products development enabling full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems - Reputation of manufacturing top-quality rotating a"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems"
+        },
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 3,
+          "quote": "The company secured new orders worth Rs 4,494 Crores across Artillery systems, Armored vehicles and consumables."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "investor_presentation"
+      ],
+      "pages": [
+        3,
+        11,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "artillery systems",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "systems, AI &#x26; data analytics) and platform/products development enabling full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems - Reputation of manufacturing top-quality rotating a"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "systems, AI &#x26; data analytics) and platform/products development enabling full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems # GENERAL ENGINEERING # Our Expertise - Manufactu"
+        },
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 3,
+          "quote": "The company secured new orders worth Rs 4,494 Crores across Artillery systems, Armored vehicles and consumables."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25",
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "annual_report",
+        "investor_presentation"
+      ],
+      "pages": [
+        3,
+        11,
+        26,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca",
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "electric motorcycles",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "electric trucks",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "inverters",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "This includes investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "powertrain and chassis components",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Amongst world's leading powertrain and chassis components manufacturers having front-line design and engineering, dual shore manufacturing and full-service supply capabilities"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "Amongst world's leading powertrain and chassis components manufacturer"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 11,
+          "quote": "Amongst world's leading powertrain and chassis components manufacturer"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        11,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "protected vehicles",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 28,
+          "quote": "With a comprehensive range of world-class products, including towed, mounted, and ultra-light guns, as well as protected vehicles and unmanned systems incubated through indigenous technologies"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        11,
+        28
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "rotating and landing gear components",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Reputation of manufacturing top-quality rotating and landing gear components for global aerospace players with zero-defect supported by end-to-end digitized operations"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "Reputation for manufacturing top-quality rotating and landing gear components for global aerospace players with zero-defect supported by an end-to-end digital footprint"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 11,
+          "quote": "Reputation for manufacturing top-quality rotating and landing gear components for global aerospace players with zero-defect supported by an end-to-end digital footprint"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        11,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "steel forgings",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 24,
+          "quote": "From being a supplier of steel forgings, we have evolved as a manufacturing conglomerate with expertise across steel, aluminum, ferrous, titanium and other exotic alloys."
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Providing solutions for renewable energy across steel forgings and ferrous castings"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25",
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        24,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca",
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "turbochargers",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Capability of supplying indigenously developed turbochargers for rail applications"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "Capability of supplying indigenously developed turbochargers for rail applications"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 11,
+          "quote": "Capability of supplying indigenously developed turbochargers for rail applications"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        11,
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "unmanned systems",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 28,
+          "quote": "With a comprehensive range of world-class products, including towed, mounted, and ultra-light guns, as well as protected vehicles and unmanned systems incubated through indigenous technologies"
+        },
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 11,
+          "quote": "full system capabilities across artillery systems, protected vehicles, armored vehicles and unmanned systems"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24",
+        "BSE Annual Report 2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        11,
+        28
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+        "bse_annual_report_bse_annual_report_2023_a31631bd27"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Commercial Vehicles",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 5,
+          "quote": "Commercial Vehicles\nAutomotive Business: FY24 was an year of consolidation for the MHCV industry in India after two years of spectacular growth. BFL too saw mild revenue accretion in its CV business."
+        },
+        {
+          "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+          "source": "Investor Presentation",
+          "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+          "page": 5,
+          "quote": "Commercial Vehicles | 3,625 | 2,844 | 2,951"
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24",
+        "Investor Presentation"
+      ],
+      "source_types": [
+        "investor_presentation",
+        "investor_presentation"
+      ],
+      "pages": [
+        5
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+        "nse_investor_presentation_investor_presentation_e67ddc5acb"
+      ],
+      "confidence": 0.98,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Industrial",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 5,
+          "quote": "13 | # Industrial Industrials Business: The Industrial segment saw its revenue rise 72% in FY24. The sharp rise was driven by supply of components &#x26; products for defence application. Apart from defence, green s"
+        },
+        {
+          "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+          "source": "Investor Presentation",
+          "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+          "page": 5,
+          "quote": "Industrial | 4,498 | 5,198 | 2,770"
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24",
+        "Investor Presentation"
+      ],
+      "source_types": [
+        "investor_presentation",
+        "investor_presentation"
+      ],
+      "pages": [
+        5
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+        "nse_investor_presentation_investor_presentation_e67ddc5acb"
+      ],
+      "confidence": 0.98,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Passenger Vehicles",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 5,
+          "quote": "Passenger Vehicles\nThe premiumization trend in the PV segment continues, with Utility vehicles now accounting for more than 50% of the sales."
+        },
+        {
+          "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+          "source": "Investor Presentation",
+          "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+          "page": 5,
+          "quote": "Passenger Vehicles | 3,374 | 3,780 | 2,882"
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24",
+        "Investor Presentation"
+      ],
+      "source_types": [
+        "investor_presentation",
+        "investor_presentation"
+      ],
+      "pages": [
+        5
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+        "nse_investor_presentation_investor_presentation_e67ddc5acb"
+      ],
+      "confidence": 0.98,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "product": "ATAGS platforms",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 22,
+          "quote": "Signed contract with Government of India to supply 184 ATAGS platforms for ~C4,000 crore."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        22
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "E-mobility",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 30,
+          "quote": "Our newer and emerging businesses, including E-mobility, automobile light-weighting, defence, and aerospace, are making remarkable strides."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        30
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "EV powertrain systems",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 29,
+          "quote": "Developing full-stack EV powertrain systems."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        29
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Electronic products manufacturing line",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 29,
+          "quote": "Electronic products manufacturing line operational. Utilization likely to receive a step up with server manufacturing at the recently inaugurated SMT line."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        29
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "aluminum castings",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 29,
+          "quote": "In addition to Forging, we aim to increase our content per customer via supply of ferrous and aluminum castings."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        29
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "castings",
+      "citations": [
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 14,
+          "quote": "E-mobility: Play the full spectrum of automotive sector (2W, CV, PV), increase content per vehicle and evolve to become a supplier of solutions across castings/forgings across various materials, power electronics and subsystems"
+        }
+      ],
+      "sources": [
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        14
+      ],
+      "documents": [
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "chassis components",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "Among the world's leading manufacturers of powertrain and chassis components, with advanced design, dual-shore manufacturing, and full-service supply capabilities"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        26
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "engine components for railway applications",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "Leading supplier of engine components for railway applications in domestic and global markets"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        26
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "ferrous castings",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Providing solutions for renewable energy across steel forgings and ferrous castings"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "forgings",
+      "citations": [
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 14,
+          "quote": "E-mobility: Play the full spectrum of automotive sector (2W, CV, PV), increase content per vehicle and evolve to become a supplier of solutions across castings/forgings across various materials, power electronics and subsystems"
+        }
+      ],
+      "sources": [
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        14
+      ],
+      "documents": [
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "landing gear components",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 22,
+          "quote": "Announced advanced aerospace component facility in Pune for manufacturing aero structure and landing gear components."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        22
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "naval utility products",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        26
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "power electronics",
+      "citations": [
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 14,
+          "quote": "evolve to become a supplier of solutions across castings/forgings across various materials, power electronics and subsystems"
+        }
+      ],
+      "sources": [
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        14
+      ],
+      "documents": [
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "protected and armored vehicles",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "End-to-end indigenous capabilities across artillery systems, protected and armored vehicles, naval utility products, and consumables"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        26
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "titanium forgings",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 31,
+          "quote": "Providing solutions across steel and titanium forgings"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        31
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "turbochargers for rail engines",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 26,
+          "quote": "Capability to manufacture indigenously developed turbochargers for rail engines"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        26
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "ultra-light guns",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 28,
+          "quote": "With a comprehensive range of world-class products, including towed, mounted, and ultra-light guns, as well as protected vehicles and unmanned systems incubated through indigenous technologies"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        28
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "underwater systems",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 22,
+          "quote": "Collaboration to strengthen capabilities in design and manufacture of underwater systems."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        22
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "AI/Digital manufacturing center",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 3,
+          "quote": "We have set up an AI/Digital manufacturing center which will catalyze the engineering/ manufacturing activities and enable improvement in productivity and shorten time to market products."
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        3
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Aerospace",
+      "citations": [
+        {
+          "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+          "source": "Investor Presentation",
+          "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+          "page": 5,
+          "quote": "ger car offtake. • Industrial segment saw mixed performance; Construction Mining and Aerospace showed resilience, however, Oil &#x26; Gas was a spoiler given the weak crude prices. 4"
+        }
+      ],
+      "sources": [
+        "Investor Presentation"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        5
+      ],
+      "documents": [
+        "nse_investor_presentation_investor_presentation_e67ddc5acb"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Construction Mining",
+      "citations": [
+        {
+          "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+          "source": "Investor Presentation",
+          "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+          "page": 5,
+          "quote": "ger car offtake. • Industrial segment saw mixed performance; Construction Mining and Aerospace showed resilience, however, Oil &#x26; Gas was a spoiler given the weak crude prices. 4"
+        }
+      ],
+      "sources": [
+        "Investor Presentation"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        5
+      ],
+      "documents": [
+        "nse_investor_presentation_investor_presentation_e67ddc5acb"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "Passenger vehicle exports",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 4,
+          "quote": "Revenues at Rs 23,286 million in Q4FY24 grew by 16.6% as compared to Q4 FY23 driven by execution on defence export order and Passenger vehicle exports."
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        4
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "defence export orders",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 3,
+          "quote": "to Rs 2,469 Crores. A key driver of the strong performance was the fulfilment of defence export orders won by KSSL and the continued strong ramp-up of exports business across all business segments except Oil"
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        3
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "product": "industrial casting",
+      "citations": [
+        {
+          "document_id": "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939",
+          "source": "Earnings Update For Q4 Of FY 2023-24",
+          "local_path": "documents/bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939.pdf",
+          "page": 3,
+          "quote": "In FY24, the industrial casting vertical recorded a strong performance with topline growing by 28%, EBITDA growth of 57% and PBT doubling compared to FY23."
+        }
+      ],
+      "sources": [
+        "Earnings Update For Q4 Of FY 2023-24"
+      ],
+      "source_types": [
+        "investor_presentation"
+      ],
+      "pages": [
+        3
+      ],
+      "documents": [
+        "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939"
+      ],
+      "confidence": 0.9,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    }
+  ],
+  "customers": [
+    {
+      "customer": "DANA",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        6
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "MACIMEX",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        6
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "Tork Motors",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 9,
+          "quote": "investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters. KPTL successfully started its first micro-factory in the e-mobility space during the year, for assembly of E-Bike catering to Tork Motors."
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters. KPTL successfully started its first micro-factory in the e-mobility space during the year, for assembly of E-Bike catering to Tork Motors."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "WE COMMERCIAL VEHICLES",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2023_a31631bd27",
+          "source": "BSE Annual Report 2023 FY23",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2023_a31631bd27.pdf",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        },
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 6,
+          "quote": "Global Supplier of the Year | Performance of the Year (2021 & 2022) | DANA | MACIMEX | WE COMMERCIAL VEHICLES"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2023 FY23",
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report",
+        "annual_report"
+      ],
+      "pages": [
+        6
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2023_a31631bd27",
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 0.99,
+      "verified": true,
+      "cross_checked": true,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "EdgeLabs SpA",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 22,
+          "quote": "KSSL purchased 25% stake in EdgeLabs SpA. Collaboration to strengthen capabilities in design and manufacture of underwater systems."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        22
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "General Motors",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 11,
+          "quote": "nternational M&#x26;A experience includes the disposition of assets by General Motors to Hyundai, acquisition of Ranbaxy, Warburg Pincus in its Indian investments, Tech Mahindra’s acquisition of Satyam, Schneider Ele"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        11
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "Government of India",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2025_787b386eca",
+          "source": "BSE Annual Report 2025 FY25",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2025_787b386eca.pdf",
+          "page": 22,
+          "quote": "Signed contract with Government of India to supply 184 ATAGS platforms for ~C4,000 crore."
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2025 FY25"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        22
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2025_787b386eca"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "Hyundai",
+      "citations": [
+        {
+          "document_id": "bse_annual_report_bse_annual_report_2024_ffe74432f0",
+          "source": "BSE Annual Report 2024 FY24",
+          "local_path": "documents/bse_annual_report_bse_annual_report_2024_ffe74432f0.pdf",
+          "page": 11,
+          "quote": "nternational M&#x26;A experience includes the disposition of assets by General Motors to Hyundai, acquisition of Ranbaxy, Warburg Pincus in its Indian investments, Tech Mahindra’s acquisition of Satyam, Schneider Ele"
+        }
+      ],
+      "sources": [
+        "BSE Annual Report 2024 FY24"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        11
+      ],
+      "documents": [
+        "bse_annual_report_bse_annual_report_2024_ffe74432f0"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    },
+    {
+      "customer": "TEVVA",
+      "citations": [
+        {
+          "document_id": "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f",
+          "source": "NSE Annual Report 2022-2023 FY23",
+          "local_path": "documents/nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f.zip",
+          "page": 9,
+          "quote": "investments in TEVVA for electric trucks, Tork Motors for electric motorcycles and a JV with REFU for inverters."
+        }
+      ],
+      "sources": [
+        "NSE Annual Report 2022-2023 FY23"
+      ],
+      "source_types": [
+        "annual_report"
+      ],
+      "pages": [
+        9
+      ],
+      "documents": [
+        "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f"
+      ],
+      "confidence": 1.0,
+      "verified": true,
+      "cross_checked": false,
+      "verification": "substring_match"
+    }
+  ],
+  "documents_processed": 7,
+  "extraction_notes": [
+    "Processing 7 unique documents (annual reports first)",
+    "Section detection mode: heuristic",
+    "Verification: deterministic substring match on parsed PDF pages (no LLM judge)",
+    "bse_annual_report_bse_annual_report_2025_787b386eca: 262p → 13 products, 2 customers ERR: verification rejected 5 ungrounded LLM proposals",
+    "bse_annual_report_bse_annual_report_2024_ffe74432f0: 262p → 13 products, 2 customers ERR: verification rejected 3 ungrounded LLM proposals",
+    "bse_annual_report_bse_annual_report_2023_a31631bd27: 266p → 14 products, 4 customers ERR: verification rejected 1 ungrounded LLM proposals",
+    "nse_annual_report_nse_annual_report_2022_2023_3aa0e25d3f: 266p → 13 products, 5 customers ERR: verification rejected 1 ungrounded LLM proposals",
+    "bse_investor_presentation_earnings_update_for_q4_of_fy_2023_24_2773cd3939: 16p → 9 products, 0 customers",
+    "nse_investor_presentation_investor_presentation_e67ddc5acb: 15p → 5 products, 0 customers ERR: verification rejected 1 ungrounded LLM proposals",
+    "nse_investor_presentation_investor_presentation_13994db7e8: 15p → 0 products, 0 customers ERR: no relevant sections detected"
+  ],
+  "extracted_at": "2026-06-05T15:15:32.148619+00:00"
+}

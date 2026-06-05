@@ -1,7 +1,7 @@
 [project]
-name = "onepager-agent"
-version = "0.1.0"
-description = "Fully-sourced, confidence-tagged company one-pager generator with claim-level grounding & cross-model verification"
+name = "bynd-company-profile"
+version = "0.2.0"
+description = "Company profiles: screener/tofler financials + NSE/BSE products/customers extraction"
 requires-python = ">=3.11"
 readme = "README.md"
 
@@ -16,5 +16,6 @@ where = ["src"]
 browser = ["playwright>=1.40"]
 
 [project.scripts]
-onepager = "onepager.cli:main"
 company-scrape = "company_scrape.cli:main"
+listed-docs = "listed_docs.cli:main"
+company-profile = "company_profile.cli:main"

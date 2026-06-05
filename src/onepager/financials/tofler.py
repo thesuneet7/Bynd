@@ -9,15 +9,12 @@ from typing import TYPE_CHECKING
 import httpx
 from selectolax.parser import HTMLParser
 
-from ..budget import BUDGET, BudgetExceeded
-from ..config import SETTINGS
 from ..schemas import ClaimType, Entity, Evidence, FinancialCell, Section, Source, SourceType
-from ..tools.search import Searcher
 from .contract import FINANCIAL_UNITS, canonical_metric, display_periods
 from .derivation import derive_financial_metrics
 
 if TYPE_CHECKING:
-    from ..pipeline.context import RunContext
+    from ..context import RunContext
 
 TOFLER_BASE = "https://www.tofler.in"
 _USER_AGENT = "Mozilla/5.0 (compatible; ByndAI/1.0)"
@@ -145,6 +142,19 @@ def _guess_tofler_url(entity: Entity) -> str | None:
     return f"{TOFLER_BASE}/{slug}/company/{entity.registry_id}"
 
 
+def _ddg_search(query: str, *, max_results: int = 8) -> list[tuple[str, str]]:
+    try:
+        from ddgs import DDGS
+
+        return [
+            (str(r.get("href") or ""), str(r.get("title") or ""))
+            for r in DDGS().text(query, max_results=max_results)
+            if r.get("href")
+        ]
+    except Exception:
+        return []
+
+
 def search_tofler_candidates(entity: Entity, *, max_results: int = 8) -> list[ToflerMatch]:
     """Search tofler.in using expanded legal name (pvt → private, ltd → limited)."""
     name = entity.canonical_name or entity.input_name
@@ -161,22 +171,22 @@ def search_tofler_candidates(entity: Entity, *, max_results: int = 8) -> list[To
 
     try:
         for query in queries:
-            for hit in Searcher().search(query, max_results=max_results):
-                if "tofler.in" not in hit.url or "/company/" not in hit.url:
+            for url, title in _ddg_search(query, max_results=max_results):
+                if "tofler.in" not in url or "/company/" not in url:
                     continue
-                if hit.url in seen_urls:
+                if url in seen_urls:
                     continue
-                seen_urls.add(hit.url)
-                cin = _cin_from_url(hit.url)
+                seen_urls.add(url)
+                cin = _cin_from_url(url)
                 if entity.registry_id and cin and cin != entity.registry_id:
                     continue
                 score = max(
-                    _name_score(name, hit.title, url=hit.url),
-                    _name_score(expanded, hit.title, url=hit.url),
+                    _name_score(name, title, url=url),
+                    _name_score(expanded, title, url=url),
                 )
                 if entity.registry_id and cin == entity.registry_id:
                     score = max(score, 0.99)
-                hits.append(ToflerMatch(url=hit.url, title=hit.title, score=score, cin=cin))
+                hits.append(ToflerMatch(url=url, title=title, score=score, cin=cin))
             if hits and hits[0].score >= 0.85:
                 break
     except Exception:
@@ -226,28 +236,6 @@ def _fetch_html_httpx(url: str) -> str | None:
     return None
 
 
-def _fetch_html_firecrawl(url: str) -> str | None:
-    if not SETTINGS.firecrawl_api_key:
-        return None
-    try:
-        BUDGET.charge("firecrawl")
-    except BudgetExceeded:
-        return None
-    try:
-        from firecrawl import FirecrawlApp
-
-        doc = FirecrawlApp(api_key=SETTINGS.firecrawl_api_key).scrape(
-            url,
-            formats=["html"],
-            only_main_content=False,
-            timeout=90000,
-        )
-        html = getattr(doc, "html", None) or ""
-        return html if len(html) > 5000 else None
-    except Exception:
-        return None
-
-
 def _page_looks_paywalled(html: str) -> bool:
     """True when the public page has no annual tables (common on paid-only profiles)."""
     if "Mar 20" in html and "Sales" in html:
@@ -261,9 +249,6 @@ def fetch_tofler_html(url: str) -> tuple[str, str]:
     html = _fetch_html_httpx(url)
     if html:
         return html, "httpx"
-    html = _fetch_html_firecrawl(url)
-    if html:
-        return html, "firecrawl"
     raise ToflerParseError(f"Could not fetch tofler.in page: {url}")
 
 

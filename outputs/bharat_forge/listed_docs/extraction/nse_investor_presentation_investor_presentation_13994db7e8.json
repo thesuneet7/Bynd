@@ -1,0 +1,30 @@
+{
+  "document_id": "nse_investor_presentation_investor_presentation_13994db7e8",
+  "title": "Investor Presentation",
+  "category": "investor_presentation",
+  "fy_label": "",
+  "local_path": "documents/nse_investor_presentation_investor_presentation_13994db7e8.pdf",
+  "pages_parsed": 15,
+  "sections": [
+    {
+      "section": "Operations",
+      "start_page": 3,
+      "end_page": 3,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 10,
+      "end_page": 14,
+      "bucket": "Operations"
+    }
+  ],
+  "products": [],
+  "customers": [],
+  "segments": [],
+  "competitors": [],
+  "risks": [],
+  "errors": [
+    "Budget cap hit for 'claude': 20+1 > 20. Raise MAX_* in .env if intentional."
+  ]
+}

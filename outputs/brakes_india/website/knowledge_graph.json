@@ -1,0 +1,1188 @@
+{
+  "company": "Brakes India Private Limited",
+  "ticker": "https://www.brakesindia.com/",
+  "website": "https://www.brakesindia.com/",
+  "source": "company_website",
+  "products": [
+    {
+      "product": "Hydraulic braking systems",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "We are the leading supplier of hydraulic braking systems for passenger and small commercial vehicles.",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Callipers / Calipers",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Our key products include callipers, drum brakes, actuation, slip control, brake hoses and clutch actuation.",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Drum brakes",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Our key products include callipers, drum brakes, actuation, slip control, brake hoses and clutch actuation.",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Brake actuation",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Product Portfolio: Brake Actuation",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Clutch actuation",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Product Portfolio: Clutch Actuation",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Wheel end brakes",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Product Portfolio: Wheel End Brakes",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Slip control systems",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Product Portfolio: Slip Control Systems",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Brake hoses",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/light-vehicles-business-unit/",
+          "quote": "Product Portfolio: Brake Hoses",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Caliper assembly",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/foundation-brakes/caliper-assembly/",
+          "quote": "About The Product: Caliper Assembly",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Motor on drum",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/foundation-brakes/caliper-assembly/",
+          "quote": "More Products In This Category: Drum Brake Assembly; Motor on Drum; Motor on Caliper",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Motor on caliper",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/foundation-brakes/caliper-assembly/",
+          "quote": "More Products In This Category: Drum Brake Assembly; Motor on Drum; Motor on Caliper",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Tandem booster master cylinder assembly",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/brake-actuation/",
+          "quote": "Products: Tandem Booster Master Cylinder Assembly; Booster Master Cylinder Assembly",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Booster master cylinder assembly",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/brake-actuation/",
+          "quote": "Products: Tandem Booster Master Cylinder Assembly; Booster Master Cylinder Assembly",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Light commercial vehicle brake system",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Product Portfolio: Light Commercial Vehicle Brake System",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Heavy commercial vehicle brake system",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Product Portfolio: Heavy Commercial Vehicle Brake System",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Tractor brake system",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Product Portfolio: Tractor Brake System",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "S-cam brakes",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Alongside being the largest supplier of S Cam brakes in the world...",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Hydraulic brakes",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Our product range includes hydraulic brakes, clutch actuation, electro-magnetic retarders and air actuation.",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Electro-magnetic retarders",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Our product range includes hydraulic brakes, clutch actuation, electro-magnetic retarders and air actuation.",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Air actuation / air management devices",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Our product range includes ... air actuation (air management devices, control valves and wheel-end solutions).",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Control valves",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-vehicles-business-unit/",
+          "quote": "Our product range includes ... air actuation (air management devices, control valves and wheel-end solutions).",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Air disc brake",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-commercial-vehicle-brake-system/",
+          "quote": "Products: Electro Magnetic Retarder; S Cam Brake; Air Disc Brake; Air Brake System",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Air brake system",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/heavy-commercial-vehicle-brake-system/",
+          "quote": "Products: Electro Magnetic Retarder; S Cam Brake; Air Disc Brake; Air Brake System",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Oil immersed brakes",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/tractor-brake-system/oil-immersed-brakes/",
+          "quote": "Oil Immersed Brakes - Brakes India",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Annular piston brake",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/tractor-brake-system/oil-immersed-brakes/",
+          "quote": "More Products In This Category: CCV Master Cylinder; Annular Piston Brake",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Turbocharger parts",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Product Portfolio: Turbocharger Parts",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Steering knuckles",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Product Portfolio: Steering Knuckles",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Chassis parts",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Product Portfolio: Chassis Parts",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Engine parts",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Product Portfolio: Engine Parts",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Brake parts",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Product Portfolio: Brake Parts",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Carrier castings",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Products Manufactured: Carrier, housing, bearing housing, bearing cap, center housing, torque plate casting and steering knuckle",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Bearing housing / bearing cap / center housing",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Products Manufactured: Carrier, housing, bearing housing, bearing cap, center housing, torque plate casting and steering knuckle",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Torque plate casting",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Products Manufactured: Carrier, housing, bearing housing, bearing cap, center housing, torque plate casting and steering knuckle",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Integral manifolds / turbine housing / adaptor casting",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/metal-castings-business-unit/",
+          "quote": "Products Manufactured: Carrier, housing, integral manifolds, turbine housing, bearing cap, torque plate casting, adaptor casting, steering knuckle and other chassis parts",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Special purpose machines",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Special Purpose Machines",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Test rigs",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Test Rigs",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Integrated assembly lines",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Integrated Assembly Lines",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Robotic solutions",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Robotic Solutions",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Vision systems",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Vision Systems",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Deburring and marking systems",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/amtix/",
+          "quote": "Product Portfolio: Deburring and Marking Systems",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Engineering thermoplastics",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Sundaram Polymers ... market leader in manufacturing various grades of engineering thermoplastics",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Acrylonitrile butadiene styrene",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Product Portfolio: Acrylonitrile Butadiene Styrene",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "PC & PC ABS alloy",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Product Portfolio: PC & PC ABS Alloy",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Polyoxymethylene - POM",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Product Portfolio: Polyoxymethylene - POM",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Polyesters family",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Product Portfolio: Polyesters Family",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Injection moulded art-to-part solutions",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/polymers/",
+          "quote": "Product Portfolio: Injection Moulded - Art To Part Solution",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "QIK Brake Service",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "FAMBU - SERVICE OFFERINGS: QIK Brake Service (QBS)",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "Authorized Service Centre",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "FAMBU - SERVICE OFFERINGS: Authorized Service Centre (ASC)",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "product": "TVS Sprinter Brake",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "FAMBU - SERVICE OFFERINGS: TVS Sprinter Brake",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    }
+  ],
+  "customers": [
+    {
+      "customer": "Advics",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Advics",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Ford",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Ford",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Honda",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Honda",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Isuzu",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Isuzu",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Mahindra",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Mahindra",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Maruti Suzuki",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Maruti Suzuki",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Nissan",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Nissan",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Renault",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Renault",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Skoda",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Skoda",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Stellantis",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Stellantis",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Tata / Tata Motors",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: TATA; Tata Motors",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Toyota",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Toyota",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Volkswagen (VW)",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: VW",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "ZF",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: ZF",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Ashok Leyland / AL",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Tata Motors; Ashok Leyland; Volvo Eicher Commercial Vehicles; Force Motors; Daimler India; Mahindra; UD Trucks; MAN; FUSO; Meritor; SML Isuzu",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Volvo Eicher Commercial Vehicles",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Volvo Eicher Commercial Vehicles",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Force Motors",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Force Motors",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Daimler India",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Daimler India",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "UD Trucks",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: UD Trucks",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "MAN",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: MAN",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "FUSO",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: FUSO",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Meritor",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: Meritor",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "SML Isuzu",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "Key customers include: SML Isuzu",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "TAFE",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: TAFE",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "TMTL",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: TMTL",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "ITL Sonalika",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: ITL Sonalika",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Escorts Limited",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: Escorts limited",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "Action Construction Limited",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: Action construction limited",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    },
+    {
+      "customer": "TMA",
+      "citations": [
+        {
+          "url": "https://www.brakesindia.com/wp-content/uploads/2025/08/Sustainability-Report-2023-24.pdf",
+          "quote": "HVBU tractor/off-highway key customers include: TMA",
+          "type": "page"
+        }
+      ],
+      "source_types": [
+        "company_website"
+      ],
+      "confidence": 0.85,
+      "verified": true
+    }
+  ],
+  "documents_processed": 10,
+  "images_saved": 0,
+  "extraction_notes": [
+    "Reused corrected standalone Brakes India website extraction.",
+    "corrected standalone extraction from official Brakes India website pages and official sustainability report hosted on brakesindia.com; noisy media headlines removed",
+    "Verified: 49 products, 29 customers"
+  ],
+  "extracted_at": "2026-06-05T19:07:24.477319+00:00"
+}

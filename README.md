@@ -1,95 +1,75 @@
-# Company One-Pager Agent
+# Company Profile Pipeline
 
-AI system that produces a **fully-sourced, confidence-tagged** company one-pager from minimal input (company name + optional hint). Built for the Bynd take-home assignment.
+Builds a **verified company profile** from public sources — no web-scraping discovery loop, no embeddings.
 
-**Core rule (Grounding Contract):** no claim is emitted unless it is backed by a retrieved source span and passes an independent verification step. The LLM never acts as the source of a fact.
+## Pipelines
 
-## Quick start
+| CLI | Purpose |
+|-----|---------|
+| `company-profile` | **End-to-end** — overview + financials + products/customers → `company_profile.json` + `.md` |
+| `company-scrape` | Screener/tofler overview + financials only |
+| `listed-docs` | NSE/BSE annual reports + investor decks → verified products/customers |
 
-```bash
-cd /path/to/ByndAI
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
-
-cp .env.example .env   # fill API keys
-```
-
-Run on the two assignment companies:
+### Listed company (full run)
 
 ```bash
-onepager "Bharat Forge Limited" --hint "NSE: BHARATFORG" --slug bharat_forge
-onepager "Brakes India Private Limited" --hint "TVS group, Chennai" --slug brakes_india
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt && pip install -e .
+
+cp .env.example .env   # see required keys below
+
+company-profile --demo
+# or
+company-profile --name "Bharat Forge Limited" --ticker BHARATFORG
 ```
 
-Outputs land in `outputs/<slug>/`:
-- `onepager.json` — canonical (full provenance)
-- `onepager.md` — human-readable
-- `onepager.html` — GPIL-style four-region layout
+Outputs under `outputs/<slug>/`:
+- `company_profile.json` / `company_profile.md` — unified profile
+- `listed_docs/` — PDFs, `knowledge_graph.json`, extraction artifacts
 
-## Architecture (short)
+### Unlisted company
 
-```
-Input (name + hint)
-  → Entity resolution (offline for assignment companies)
-  → Source discovery (seeded URLs; Tavily optional, capped)
-  → Ingestion (pypdf + httpx; local embeddings; page relevance triage)
-  → Section agents (Claude: overview / financials / products / clients)
-  → Verification gate (Grok: entailment per claim)
-  → Confidence scoring (deterministic)
-  → Assemble + Honesty Lint
-  → Render JSON / MD / HTML
+```bash
+company-profile --name "Brakes India Private Limited" --cin U35999TN1962PTC004928
 ```
 
-| Stage | Model / tool | API cost (strict defaults) |
-|-------|----------------|----------------------------|
-| Entity (Bharat / Brakes) | Offline lookup | **0** |
-| Discovery | **DuckDuckGo** (free) + seeds; Tavily fallback (capped) | **0–2 Tavily** |
-| PDF | `pypdf` local | **0** |
-| Web | **Firecrawl** (preferred) → `httpx` fallback; disk cache | **≤10 Firecrawl** |
-| Embeddings | `fastembed` (local) | **0** |
-| Draft claims | Claude Sonnet | ~4 calls / run |
-| Verify | Grok | ~3 calls / run |
+Overview + financials come from **tofler.in**. Products/customers extraction for unlisted companies is **not implemented yet** (stub in `listed_docs/unlisted.py`).
 
-**Caps** in `.env` (fail closed): `MAX_DDG_SEARCHES=6`, `MAX_TAVILY_SEARCHES=2`, `MAX_FIRECRAWL_SCRAPES=10`, `MAX_LLAMAPARSE_PAGES=0`, `MAX_CLAUDE_CALLS=20`, `MAX_GROK_CALLS=25`.
+## Architecture
 
-### Web search alternatives
-
-| Provider | Cost | In this repo |
-|----------|------|----------------|
-| **DuckDuckGo** (`duckduckgo-search`) | Free | **Default** (`SEARCH_PROVIDER=ddg_then_tavily`) |
-| **Tavily** | Paid (your tightest pool) | Optional fallback when DDG is thin |
-| Brave Search API | Paid free tier | Not wired — add if you get a key |
-| SerpAPI / Google CSE | Paid | Not wired |
-| **Firecrawl map/crawl** | Uses Firecrawl credits | Could replace search for known domains later |
-
-Set `SEARCH_PROVIDER=ddg` to never touch Tavily, or `tavily` to use Tavily only.
-
-See `ARCHITECTURE.md` for full design rationale.
+```
+company-profile
+  ├─ screener.in / tofler.in     → overview + FY23–25 financials
+  ├─ NSE/BSE (listed only)       → last 3y annual reports + presentations
+  ├─ LlamaParse + Claude         → propose products/customers
+  ├─ Deterministic verify        → quote + name must match parsed PDF text
+  └─ Merge                       → company_profile.json + .md (full citations)
+```
 
 ## Repo layout
 
 ```
-src/onepager/
-  schemas.py          # Source, Evidence, Claim, FinancialCell, OnePager
-  llm.py              # Claude (writer) + Grok (verifier)
-  budget.py           # Hard API caps
-  pipeline/           # entity, discovery, ingestion, agents, verify, assemble, run
-  tools/              # search, scrape, pdf, retrieval
-  render/             # markdown, html
+src/
+  onepager/           # shared: config, financials providers, Claude client
+  company_scrape/     # screener/tofler scrape
+  listed_docs/        # NSE/BSE fetch + products/customers extraction
+  company_profile/    # unified export
 outputs/
-  bharat_forge/       # assignment run outputs
-  brakes_india/
+  <slug>/company_profile.{json,md}
+  <slug>/listed_docs/
 ```
 
-## Assignment outputs included
+## Environment variables
 
-- `outputs/bharat_forge/onepager.{json,md,html}`
-- `outputs/brakes_india/onepager.{json,md,html}`
+| Variable | Required? | Why |
+|----------|-----------|-----|
+| `CLAUDE_API_KEY` | **Yes** (listed products/customers) | Extraction from PDFs |
+| `LLAMAPARSE_API_KEY` | **Yes** (listed products/customers) | PDF parsing |
+| `SCREENER_USERNAME` / `SCREENER_PASSWORD` | **Yes for listed overview** | Public screener page only gives a short About blurb + teaser; **full Key Insights (14 sections)** need a logged-in session hitting the wiki commentary API |
+| Screener creds | No for financials | FY table is on the public consolidated page (httpx/session) |
 
-See `WRITEUP.md` for honest quality assessment and limits.
+Without screener login you still get financials and a thin overview; `company_profile.md` will note that Key Insights are incomplete.
 
-## Do not commit secrets
+## TODO
 
-`.env` and `api_keys.txt` are gitignored. Use `.env.example` as a template.
+- [ ] **Unlisted products/customers** — MCA filings, tofler documents, company website (same verify gate as listed-docs)

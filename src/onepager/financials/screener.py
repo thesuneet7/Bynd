@@ -14,7 +14,6 @@ from typing import TYPE_CHECKING
 import httpx
 from selectolax.parser import HTMLParser
 
-from ..budget import BUDGET, BudgetExceeded
 from ..config import SETTINGS
 from ..schemas import ClaimType, Entity, Evidence, FinancialCell, Section, Source, SourceType
 from .contract import FINANCIAL_UNITS, canonical_metric, latest_periods
@@ -27,7 +26,7 @@ from .screener_api import (
 from .screener_session import ScreenerAuthError, get_screener_client
 
 if TYPE_CHECKING:
-    from ..pipeline.context import RunContext
+    from ..context import RunContext
 
 SCREENER_BASE = "https://www.screener.in/company"
 _USER_AGENT = "Mozilla/5.0 (compatible; ByndAI/1.0)"
@@ -398,29 +397,6 @@ def _fetch_html_httpx(url: str, *, client: httpx.Client | None = None) -> str | 
     return None
 
 
-def _fetch_html_firecrawl(url: str) -> str | None:
-    if not SETTINGS.firecrawl_api_key:
-        return None
-    try:
-        BUDGET.charge("firecrawl")
-    except BudgetExceeded:
-        return None
-    try:
-        from firecrawl import FirecrawlApp
-
-        app = FirecrawlApp(api_key=SETTINGS.firecrawl_api_key)
-        doc = app.scrape(
-            url,
-            formats=["html"],
-            only_main_content=False,
-            timeout=60000,
-        )
-        html = getattr(doc, "html", None) or ""
-        return html if "profit-loss" in html else None
-    except Exception:
-        return None
-
-
 def fetch_screener_html(
     ticker: str,
     *,
@@ -432,10 +408,6 @@ def fetch_screener_html(
     if html:
         via = "session" if client is not None else "httpx"
         return html, via, company_id_from_html(html)
-
-    html = _fetch_html_firecrawl(url)
-    if html:
-        return html, "firecrawl", company_id_from_html(html)
 
     raise ScreenerParseError(f"Could not fetch screener.in page for {ticker}")
 

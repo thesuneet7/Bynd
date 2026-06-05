@@ -1,0 +1,89 @@
+{
+  "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+  "title": "Investor Presentation",
+  "category": "investor_presentation",
+  "fy_label": "",
+  "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+  "pages_parsed": 15,
+  "sections": [
+    {
+      "section": "Products",
+      "start_page": 5,
+      "end_page": 5,
+      "bucket": "Products"
+    },
+    {
+      "section": "Operations",
+      "start_page": 3,
+      "end_page": 3,
+      "bucket": "Operations"
+    },
+    {
+      "section": "Operations",
+      "start_page": 10,
+      "end_page": 14,
+      "bucket": "Operations"
+    }
+  ],
+  "products": [
+    {
+      "name": "Commercial Vehicles",
+      "evidence": "Commercial Vehicles | 3,625 | 2,844 | 2,951",
+      "source": "Investor Presentation",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "verified": true
+    },
+    {
+      "name": "Passenger Vehicles",
+      "evidence": "Passenger Vehicles | 3,374 | 3,780 | 2,882",
+      "source": "Investor Presentation",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "verified": true
+    },
+    {
+      "name": "Industrial",
+      "evidence": "Industrial | 4,498 | 5,198 | 2,770",
+      "source": "Investor Presentation",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "verified": true
+    },
+    {
+      "name": "Construction Mining",
+      "evidence": "ger car offtake. • Industrial segment saw mixed performance; Construction Mining and Aerospace showed resilience, however, Oil &#x26; Gas was a spoiler given the weak crude prices. 4",
+      "source": "Investor Presentation",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "verified": true
+    },
+    {
+      "name": "Aerospace",
+      "evidence": "ger car offtake. • Industrial segment saw mixed performance; Construction Mining and Aerospace showed resilience, however, Oil &#x26; Gas was a spoiler given the weak crude prices. 4",
+      "source": "Investor Presentation",
+      "confidence": 0.0,
+      "bucket": "products",
+      "page": 5,
+      "document_id": "nse_investor_presentation_investor_presentation_e67ddc5acb",
+      "local_path": "documents/nse_investor_presentation_investor_presentation_e67ddc5acb.pdf",
+      "verified": true
+    }
+  ],
+  "customers": [],
+  "errors": [
+    "verification rejected 1 ungrounded LLM proposals"
+  ]
+}
