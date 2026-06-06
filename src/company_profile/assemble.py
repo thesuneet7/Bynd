@@ -100,6 +100,46 @@ def _format_citation(cite: dict[str, Any]) -> str:
     return f"{source} · `{path}`"
 
 
+def _citation_anchor(prefix: str, idx: int) -> str:
+    return f"{prefix.lower()}-citation-{prefix.lower()}{idx}"
+
+
+def _citation_links(prefix: str, start: int, count: int) -> str:
+    if count <= 0:
+        return "no citations"
+    links = []
+    for i in range(start, start + count):
+        label = f"{prefix}{i}"
+        links.append(f"[{label}](#{_citation_anchor(prefix, i)})")
+    return ", ".join(links)
+
+
+def _append_citation_blocks(
+    lines: list[str],
+    *,
+    title: str,
+    prefix: str,
+    rows: list[dict[str, Any]],
+    key: str,
+) -> None:
+    if not rows:
+        return
+    lines += [f"## {title}", ""]
+    idx = 1
+    for row in rows:
+        for cite in row.get("citations") or []:
+            label = f"{prefix}{idx}"
+            lines.append(f'<a id="{_citation_anchor(prefix, idx)}"></a>')
+            lines.append(f"### {label} — {row[key]}")
+            lines.append("")
+            lines.append(f"- Source: {_format_citation(cite)}")
+            quote = (cite.get("quote") or "").strip()
+            if quote:
+                lines.append(f"  > {quote}")
+            lines.append("")
+            idx += 1
+
+
 def _md_products_customers(kg: KnowledgeGraph | None, *, listing_status: str = "listed") -> list[str]:
     lines: list[str] = []
     if kg is None:
@@ -116,14 +156,14 @@ def _md_products_customers(kg: KnowledgeGraph | None, *, listing_status: str = "
     if not kg.products:
         lines.append("_None verified._")
         lines.append("")
+    product_cite_idx = 1
     for row in kg.products:
         cross = "cross-checked" if row.get("cross_checked") else "verified"
-        lines.append(f"- **{row['product']}** ({cross})")
-        for cite in row.get("citations") or []:
-            lines.append(f"  - {_format_citation(cite)}")
-            quote = (cite.get("quote") or "").strip()
-            if quote:
-                lines.append(f"    > {quote}")
+        citations = row.get("citations") or []
+        links = _citation_links("P", product_cite_idx, len(citations))
+        lines.append(f"- **{row['product']}** ({cross}) — citations: {links}")
+        product_cite_idx += len(citations)
+    if kg.products:
         lines.append("")
 
     lines += [
@@ -135,15 +175,30 @@ def _md_products_customers(kg: KnowledgeGraph | None, *, listing_status: str = "
     if not kg.customers:
         lines.append("_None verified._")
         lines.append("")
+    customer_cite_idx = 1
     for row in kg.customers:
         cross = "cross-checked" if row.get("cross_checked") else "verified"
-        lines.append(f"- **{row['customer']}** ({cross})")
-        for cite in row.get("citations") or []:
-            lines.append(f"  - {_format_citation(cite)}")
-            quote = (cite.get("quote") or "").strip()
-            if quote:
-                lines.append(f"    > {quote}")
+        citations = row.get("citations") or []
+        links = _citation_links("C", customer_cite_idx, len(citations))
+        lines.append(f"- **{row['customer']}** ({cross}) — citations: {links}")
+        customer_cite_idx += len(citations)
+    if kg.customers:
         lines.append("")
+
+    _append_citation_blocks(
+        lines,
+        title="Product Citations",
+        prefix="P",
+        rows=kg.products,
+        key="product",
+    )
+    _append_citation_blocks(
+        lines,
+        title="Customer Citations",
+        prefix="C",
+        rows=kg.customers,
+        key="customer",
+    )
 
     return lines
 

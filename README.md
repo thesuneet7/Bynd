@@ -5,11 +5,13 @@ Builds a cited company profile from public sources:
 - company overview and financials
 - products / product families / offerings
 - customers / clients / OEMs
-- JSON + Markdown outputs under `outputs/<company_slug>/`
+- JSON + Markdown outputs under `outputs/<company_name>/company_profile.md`
 
 The main entry point is now `company-profiles`, which accepts company names and automatically routes each company through the listed or unlisted path.
 
 This repository is organized for the Bynd AI Engineering Intern take-home (`assessment.pdf`): produce sourced one-pagers for **Bharat Forge Limited** and **Brakes India Private Limited** from minimal input.
+
+Please refer to the [WRITEUP.md](http://WRITEUP.md) to see the logic and whole rationale behind the full pipeline.
 
 ## Quick Start
 
@@ -55,12 +57,14 @@ outputs/<company_slug>/
 
 ## Pipelines
 
-| CLI | Purpose |
-|---|---|
-| `company-profiles` | Batch auto-router for one or more company names |
-| `company-profile` | Single-company profile when listing status/ticker/website is already known |
-| `company-scrape` | Overview + financials only |
-| `listed-docs` | Fetch/extract NSE/BSE filings for listed companies |
+
+| CLI                | Purpose                                                                    |
+| ------------------ | -------------------------------------------------------------------------- |
+| `company-profiles` | Batch auto-router for one or more company names                            |
+| `company-profile`  | Single-company profile when listing status/ticker/website is already known |
+| `company-scrape`   | Overview + financials only                                                 |
+| `listed-docs`      | Fetch/extract NSE/BSE filings for listed companies                         |
+
 
 ## Architecture
 
@@ -99,12 +103,14 @@ The extraction layer follows `prod_client_instructions.md`:
 
 ## Environment Variables
 
-| Variable | Required? | Why |
-|---|---:|---|
-| `CLAUDE_API_KEY` | Yes | Products/customers extraction and image interpretation |
-| `LLAMAPARSE_API_KEY` | Yes for listed filings | PDF to Markdown parsing |
-| `FIRECRAWL_API_KEY` | Recommended for unlisted websites | URL mapping / fallback scraping |
-| `SCREENER_USERNAME` / `SCREENER_PASSWORD` | Recommended for listed overview | Full Screener Key Insights require login |
+
+| Variable                                  | Required?                         | Why                                                    |
+| ----------------------------------------- | --------------------------------- | ------------------------------------------------------ |
+| `CLAUDE_API_KEY`                          | Yes                               | Products/customers extraction and image interpretation |
+| `LLAMAPARSE_API_KEY`                      | Yes for listed filings            | PDF to Markdown parsing                                |
+| `FIRECRAWL_API_KEY`                       | Recommended for unlisted websites | URL mapping / fallback scraping                        |
+| `SCREENER_USERNAME` / `SCREENER_PASSWORD` | Recommended for listed overview   | Full Screener Key Insights require login               |
+
 
 Without Screener login, listed financials still work, but overview may be thinner.
 
