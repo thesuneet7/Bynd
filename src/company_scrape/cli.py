@@ -137,7 +137,7 @@ def _test_screener_login(*, force: bool) -> int:
     if force:
         clear_session_cache()
     try:
-        client = get_screener_client(force_login=True)
+        client = get_screener_client(force_login=force)
     except ScreenerAuthError as e:
         print(f"Login failed: {e}", file=sys.stderr)
         return 1

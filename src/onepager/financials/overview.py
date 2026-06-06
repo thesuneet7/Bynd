@@ -204,6 +204,13 @@ def fetch_screener_overview(ctx: RunContext, entity: Entity, *, ticker: str | No
     commentary_via: str | None = None
     if company_id and session is not None:
         commentary_html, commentary_via = fetch_commentary_html(company_id, session)
+        if commentary_via != "session":
+            try:
+                session = get_screener_client(force_login=True)
+                commentary_html, commentary_via = fetch_commentary_html(company_id, session)
+                ctx.note("[overview/screener] refreshed Screener session for Key Insights")
+            except ScreenerAuthError as e:
+                ctx.note(f"[overview/screener] session refresh failed: {e}")
         if commentary_via == "session" and len(commentary_html) < 800:
             ctx.note(f"[overview/screener] commentary fetch short ({len(commentary_html)} bytes) — session may be invalid")
     elif company_id and not session:

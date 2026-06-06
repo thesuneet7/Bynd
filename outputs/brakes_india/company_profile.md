@@ -1,7 +1,7 @@
 # Brakes India Private Limited
 
 **Ticker:** `—` · **Listing:** unlisted
-**Generated:** 2026-06-05T19:26:14.741782+00:00
+**Generated:** 2026-06-06T08:26:24.285376+00:00
 
 Unified profile: screener/tofler overview & financials + products/customers (NSE/BSE filings for listed; official website for unlisted).
 

@@ -52,12 +52,12 @@ def _load_cache() -> httpx.Client | None:
         return None
     try:
         data = json.loads(SESSION_CACHE.read_text())
+        if "sessionid" not in (data.get("cookies") or {}):
+            return None
         cookies = httpx.Cookies()
         for name, value in (data.get("cookies") or {}).items():
             cookies.set(name, value, domain="www.screener.in")
-        client = _client(cookies=cookies)
-        if session_is_valid(client):
-            return client
+        return _client(cookies=cookies)
     except Exception:
         pass
     return None
@@ -70,11 +70,16 @@ def _looks_like_commentary(html: str) -> bool:
     if len(html) < 1000:
         return False
     low = html.lower()
+    # The authenticated endpoint returns an HTML fragment with editable wiki
+    # sections. Anonymous/block pages can contain the same public company text,
+    # so do not accept full HTML documents as valid commentary.
+    if "<!doctype html" in low or "<html" in low:
+        return False
     if "register - screener" in low or "already registered? login here" in low:
         return False
     if "forbidden" in low and len(html) < 500:
         return False
-    return low.count("<p") >= 3 or "kalyani" in low or "market position" in low
+    return "strong upper" in low and "/wiki/company/" in low and "/edit/" in low
 
 
 def session_is_valid(client: httpx.Client, *, company_id: int = 458) -> bool:
@@ -133,20 +138,27 @@ def login_browser(username: str, password: str) -> httpx.Client:
             "Playwright not installed. Run: pip install playwright && playwright install chromium"
         ) from e
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(user_agent=_USER_AGENT)
-        page = context.new_page()
-        page.goto(LOGIN_URL, wait_until="networkidle")
-        page.fill('input[name="username"]', username.strip())
-        page.fill('input[name="password"]', password)
-        page.click('button[type="submit"]')
-        page.wait_for_timeout(2500)
-        if "login" in page.url.lower() and page.locator("text=Please enter a correct").count():
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=_USER_AGENT)
+            page = context.new_page()
+            page.goto(LOGIN_URL, wait_until="networkidle")
+            page.fill('input[name="username"]', username.strip())
+            page.fill('input[name="password"]', password)
+            page.click('button[type="submit"]')
+            page.wait_for_timeout(2500)
+            if "login" in page.url.lower() and page.locator("text=Please enter a correct").count():
+                browser.close()
+                raise ScreenerAuthError("screener.in rejected username/password (browser login)")
+            cookies = context.cookies()
             browser.close()
-            raise ScreenerAuthError("screener.in rejected username/password (browser login)")
-        cookies = context.cookies()
-        browser.close()
+    except ScreenerAuthError:
+        raise
+    except Exception as e:
+        raise ScreenerAuthError(
+            "Browser login failed. Run `playwright install chromium` or set SCREENER_LOGIN=httpx."
+        ) from e
 
     jar = httpx.Cookies()
     for c in cookies:
@@ -192,6 +204,7 @@ def fetch_commentary_html(company_id: int, client: httpx.Client | None = None) -
         r = client.get(url, headers=_WIKI_HEADERS)
         if r.status_code == 200 and _looks_like_commentary(r.text):
             return r.text, "session"
+        return r.text, "blocked"
     r = httpx.get(url, headers={"User-Agent": _USER_AGENT}, follow_redirects=True, timeout=30)
     return r.text, "anonymous"
 

@@ -19,3 +19,4 @@ browser = ["playwright>=1.40"]
 company-scrape = "company_scrape.cli:main"
 listed-docs = "listed_docs.cli:main"
 company-profile = "company_profile.cli:main"
+company-profiles = "company_profile.unified:main"
