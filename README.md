@@ -13,6 +13,8 @@ This repository is organized for the Bynd AI Engineering Intern take-home (`asse
 
 Please refer to [WRITEUP.md](WRITEUP.md) for rationale and [HOW_IT_WORKS.md](HOW_IT_WORKS.md) for a plain-language explanation of ticker/website resolution, filings, and verification.
 
+Loom link to see my explanation (watch at 1.7x for optimum viewing): [https://www.loom.com/share/315cc9a15fe54eb497b1ce17ba62ba0e](https://www.loom.com/share/315cc9a15fe54eb497b1ce17ba62ba0e)
+
 ## Quick Start
 
 ```bash
