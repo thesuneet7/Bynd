@@ -46,6 +46,21 @@ CUSTOMER_SIGNALS: tuple[str, ...] = (
 
 PRODUCT_HEADING_RE = re.compile(r"|".join(PRODUCT_SIGNALS), re.I)
 CUSTOMER_HEADING_RE = re.compile(r"|".join(CUSTOMER_SIGNALS), re.I)
+
+ABOUT_SIGNALS: tuple[str, ...] = (
+    r"about\s+us",
+    r"about\s+the\s+company",
+    r"who\s+we\s+are",
+    r"our\s+company",
+    r"company\s+overview",
+    r"our\s+story",
+    r"our\s+heritage",
+    r"our\s+journey",
+    r"corporate\s+profile",
+    r"overview",
+)
+
+ABOUT_HEADING_RE = re.compile(r"|".join(ABOUT_SIGNALS), re.I)
 PRODUCT_TEXT_RE = re.compile(r"|".join(PRODUCT_SIGNALS + (r"brake|forging|casting|component",)), re.I)
 CUSTOMER_TEXT_RE = re.compile(
     r"|".join(CUSTOMER_SIGNALS + (r"award|supplier|oem",)),
@@ -67,6 +82,8 @@ def classify_heading(text: str) -> str | None:
         return "customers"
     if PRODUCT_HEADING_RE.search(t):
         return "products"
+    if ABOUT_HEADING_RE.search(t):
+        return "about"
     return None
 
 
@@ -81,6 +98,8 @@ def link_priority(text: str, href: str = "") -> int:
         return 0
     if classify_heading(text) == "products" or PRODUCT_TEXT_RE.search(combined):
         return 1
-    if re.search(r"about|company|business|industr", combined, re.I):
+    if classify_heading(text) == "about" or re.search(r"about|who.we.are|our.company|our.story", combined, re.I):
+        return 2
+    if re.search(r"company|business|industr", combined, re.I):
         return 3
     return 5

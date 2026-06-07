@@ -7,6 +7,7 @@ from pathlib import Path
 
 from listed_docs.extraction.models import KnowledgeGraph
 
+from .website.about import WebsiteAbout, extract_website_about, parse_about_from_sections
 from .website.pipeline import run_website_extraction
 
 
@@ -16,6 +17,7 @@ class UnlistedExtractionResult:
     customers: list[dict]
     notes: list[str]
     kg: KnowledgeGraph | None = None
+    website_about: WebsiteAbout | None = None
 
 
 def _load_existing_knowledge_graph(path: Path) -> KnowledgeGraph | None:
@@ -63,22 +65,35 @@ def extract_unlisted_products_customers(
     if existing is not None:
         notes = list(existing.extraction_notes)
         notes.insert(0, f"Reused existing website knowledge graph: {website_dir / 'knowledge_graph.json'}")
+        about = extract_website_about(website=website, company_name=company_name)
+        if about is not None:
+            notes.append(f"Website about parsed from {about.url}")
         return UnlistedExtractionResult(
             products=existing.products,
             customers=existing.customers,
             notes=notes,
             kg=existing,
+            website_about=about,
         )
 
-    kg = run_website_extraction(
+    kg, agent_sections = run_website_extraction(
         company_name=company_name,
         website=website,
         output_dir=website_dir,
         registry_id=registry_id,
+        return_sections=True,
     )
+    about = parse_about_from_sections(agent_sections) or extract_website_about(
+        website=website,
+        company_name=company_name,
+    )
+    notes = list(kg.extraction_notes)
+    if about is not None:
+        notes.append(f"Website about parsed from {about.url}")
     return UnlistedExtractionResult(
         products=kg.products,
         customers=kg.customers,
-        notes=kg.extraction_notes,
+        notes=notes,
         kg=kg,
+        website_about=about,
     )

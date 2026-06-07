@@ -16,13 +16,23 @@ from listed_docs.extraction.models import KnowledgeGraph
 
 def _overview_dict(overview: ProviderOverview | None) -> dict[str, Any]:
     if not overview:
-        return {"provider": "", "url": "", "about": "", "key_points": [], "note": None}
+        return {
+            "provider": "",
+            "url": "",
+            "about": "",
+            "key_points": [],
+            "note": None,
+            "website_about_url": "",
+            "website_about": "",
+        }
     return {
         "provider": overview.provider,
         "url": overview.url,
         "about": overview.about,
         "key_points": [{"title": t, "body": b} for t, b in overview.key_points],
         "note": overview.note,
+        "website_about_url": overview.website_about_url,
+        "website_about": overview.website_about,
     }
 
 

@@ -1,4 +1,6 @@
-# Write-Up
+# Write-Up   
+  
+## (For a bit in-depth determinism analysis for the whole code refer to HOW_IT_WORKS.md)
 
 ## Goal
 
@@ -13,6 +15,16 @@ For listed companies, the system uses Screener for overview and financial tables
 For unlisted companies, the system uses Tofler for overview and financials, then resolves the official company website and extracts product/customer evidence from website pages and website-hosted public documents. This is necessary because private companies often do not have investor-relations pages or clean public filings.
 
 The final artifact is a Markdown and JSON profile under `outputs/<company_slug>/`.
+
+A plain-language walkthrough of resolution, filings, and verification is in [HOW_IT_WORKS.md](HOW_IT_WORKS.md). Short version:
+
+- **Ticker (listed):** Web search on screener.in → read symbol from URL → fuzzy name match (≥ ~75%) → confirm on Screener. Override with `--ticker` for a fixed result.
+- **Website (unlisted):** Web search for “official website” → block aggregators → score domain vs company name → HTTP-check top hits. Override with `--website`.
+- **NSE/BSE filings:** Once ticker (+ BSE scrip) is known, official exchange APIs list annual reports and investor presentations for the last N years; PDFs are saved with a manifest. This step is largely deterministic given the correct symbol.
+- **Listed products/customers:** PDFs → LlamaParse → keyword section pick → LLM extract with quotes → **deterministic verify** (name + quote must appear in parsed text) → merge; cross-checked if seen in 2+ docs.
+- **Unlisted products/customers:** Playwright crawl → keyword sections (products/customers/about) → LLM extract with quotes → same **deterministic verify** → merge. Less reliable than filings; logos-only customers are a known gap.
+
+Nothing in the name→ticker or name→website steps is fully deterministic without overrides. The trust layer is: **no verified quote → no row in the output.**
 
 ## Why These Choices
 
@@ -65,3 +77,4 @@ Brakes India is data-sparse: the unlisted route gets Tofler financials and offic
 - Add automated evaluation against a small hand-labeled gold set for products/customers.
 - Add a confidence policy that distinguishes single-source website evidence from cross-checked filings.
 - Add a lightweight HTML renderer once the sourcing layer is more robust.
+

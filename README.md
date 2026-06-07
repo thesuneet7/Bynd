@@ -11,7 +11,7 @@ The main entry point is now `company-profiles`, which accepts company names and 
 
 This repository is organized for the Bynd AI Engineering Intern take-home (`assessment.pdf`): produce sourced one-pagers for **Bharat Forge Limited** and **Brakes India Private Limited** from minimal input.
 
-Please refer to the [WRITEUP.md](http://WRITEUP.md) to see the logic and whole rationale behind the full pipeline.
+Please refer to [WRITEUP.md](WRITEUP.md) for rationale and [HOW_IT_WORKS.md](HOW_IT_WORKS.md) for a plain-language explanation of ticker/website resolution, filings, and verification.
 
 ## Quick Start
 

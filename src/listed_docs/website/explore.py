@@ -22,6 +22,7 @@ _URL_PRODUCT = re.compile(
     re.I,
 )
 _URL_CUSTOMER = re.compile(r"(customer|client|oem|case.stud|partner|who-we-serve)", re.I)
+_URL_ABOUT = re.compile(r"(about|who-we-are|our-company|company-profile|our-story)", re.I)
 
 _SKIP_CLICK = re.compile(
     r"(logout|sign.?in|login|cookie|privacy|linkedin\.com|facebook\.com|twitter\.com|youtube\.com|mailto:|tel:)",
@@ -33,6 +34,7 @@ _FIND_SECTIONS_JS = r"""
 () => {
   const productKw = /products?|product portfolio|product range|our offerings?|offerings?|solutions?|what we (make|manufacture|offer)|business lines?|business units?|our businesses|components?|applications?|portfolio|manufactur/i;
   const customerKw = /customers?|clients?|client base|key accounts?|strategic accounts?|oems?|who we serve|marquee customers?|customer success|case stud|trusted by|our customers?|partner/i;
+  const aboutKw = /about us|about the company|who we are|our company|company overview|our story|our heritage|our journey|corporate profile|overview/i;
   const skipImg = /linkedin|facebook|twitter|instagram|gdpr|cookie|favicon|spinner|loader/i;
 
   function bucketFor(text) {
@@ -40,6 +42,7 @@ _FIND_SECTIONS_JS = r"""
     if (!t || t.length > 140) return null;
     if (customerKw.test(t)) return 'customers';
     if (productKw.test(t)) return 'products';
+    if (aboutKw.test(t)) return 'about';
     return null;
   }
 
@@ -232,6 +235,8 @@ def explore_site(
             return "customers"
         if _URL_PRODUCT.search(page_url):
             return "products"
+        if _URL_ABOUT.search(page_url):
+            return "about"
         return None
 
     def _save_section(
@@ -302,7 +307,7 @@ def explore_site(
             bucket = str(row.get("bucket") or "")
             heading = str(row.get("heading") or "").strip()
             text = str(row.get("text") or "").strip()
-            if bucket not in ("products", "customers") or not heading:
+            if bucket not in ("products", "customers", "about") or not heading:
                 continue
             if _save_section(page_url, bucket, heading, text, row.get("images") or [], interaction):
                 found += 1

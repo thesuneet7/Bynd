@@ -174,7 +174,8 @@ def run_website_extraction(
     website: str,
     output_dir: Path,
     registry_id: str | None = None,
-) -> KnowledgeGraph:
+    return_sections: bool = False,
+) -> KnowledgeGraph | tuple[KnowledgeGraph, list]:
     """Interactively explore company website; extract products/customers from pages + images."""
     output_dir.mkdir(parents=True, exist_ok=True)
     root = normalize_website(website)
@@ -238,4 +239,6 @@ def run_website_extraction(
         encoding="utf-8",
     )
     _write_extraction_summary(output_dir, kg, website=root)
+    if return_sections:
+        return kg, state.sections
     return kg

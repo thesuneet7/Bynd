@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
 from typing import TYPE_CHECKING
 
 from selectolax.parser import HTMLParser, Node
@@ -34,6 +35,8 @@ class ProviderOverview:
     about: str = ""
     key_points: list[tuple[str, str]] = field(default_factory=list)
     note: str | None = None
+    website_about_url: str = ""
+    website_about: str = ""
 
     @property
     def full_text(self) -> str:
@@ -43,6 +46,125 @@ class ProviderOverview:
         for title, body in self.key_points:
             parts.append(f"{title}: {body}")
         return "\n\n".join(parts)
+
+
+_REGISTRY_MARKERS = re.compile(
+    r"(incorporated on|authorized share capital|paid[- ]up capital|corporate identification|"
+    r"cin of|registered address|annual general meeting|\bagm\b|directors? -)",
+    re.I,
+)
+
+
+def _normalize_sentence(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "").strip().lower())
+
+
+def _split_sentences(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", (text or "").strip()))
+    return [p.strip() for p in parts if len(p.strip()) >= 35]
+
+
+def _is_near_duplicate(candidate: str, existing: list[str], *, threshold: float = 0.82) -> bool:
+    norm = _normalize_sentence(candidate)
+    if not norm:
+        return True
+    for item in existing:
+        other = _normalize_sentence(item)
+        if not other:
+            continue
+        if norm == other or norm in other or other in norm:
+            return True
+        if SequenceMatcher(None, norm, other).ratio() >= threshold:
+            return True
+    return False
+
+
+def _unique_sentences(sentences: list[str], *, existing: list[str]) -> list[str]:
+    out: list[str] = []
+    seen = list(existing)
+    for sentence in sentences:
+        if _is_near_duplicate(sentence, seen):
+            continue
+        out.append(sentence)
+        seen.append(sentence)
+    return out
+
+
+def merge_overview_with_website(
+    overview: ProviderOverview | None,
+    *,
+    website_about: str = "",
+    website_about_url: str = "",
+    website_sections: list[tuple[str, str]] | None = None,
+) -> ProviderOverview | None:
+    """Combine provider overview with website narrative, deduplicating overlapping text."""
+    if not overview:
+        if not website_about.strip():
+            return None
+        return ProviderOverview(
+            provider="company website",
+            url=website_about_url,
+            about=website_about.strip(),
+            website_about=website_about.strip(),
+            website_about_url=website_about_url,
+            note="Overview sourced from the company's official website.",
+        )
+    if not website_about.strip():
+        return overview
+
+    provider_sentences = _split_sentences(overview.about)
+    website_sentences = _split_sentences(website_about)
+    narrative_provider = [s for s in provider_sentences if not _REGISTRY_MARKERS.search(s)]
+    registry_provider = [s for s in provider_sentences if _REGISTRY_MARKERS.search(s)]
+
+    merged_parts: list[str] = []
+    if website_sentences:
+        merged_parts.extend(website_sentences)
+    merged_parts.extend(_unique_sentences(narrative_provider, existing=merged_parts))
+    merged_about = " ".join(merged_parts).strip() or overview.about or website_about.strip()
+
+    key_points = list(overview.key_points)
+    seen_titles = {title.lower() for title, _ in key_points}
+    supplemental = list(website_sections or []) + _website_key_points(website_about)
+    for title, body in supplemental:
+        if title.lower() in seen_titles:
+            continue
+        if _is_near_duplicate(body, [existing_body for _, existing_body in key_points]):
+            continue
+        if _is_near_duplicate(body, _split_sentences(merged_about)):
+            continue
+        key_points.append((title, body))
+        seen_titles.add(title.lower())
+
+    if registry_provider and not any(title.lower() == "registry details" for title, _ in key_points):
+        key_points.append(("Registry details", " ".join(registry_provider)))
+
+    notes: list[str] = []
+    if overview.note:
+        notes.append(overview.note)
+    notes.append(
+        "About section merged from provider overview and the company's official website "
+        "(duplicate sentences removed)."
+    )
+    return ProviderOverview(
+        provider=overview.provider,
+        url=overview.url,
+        about=merged_about,
+        key_points=key_points,
+        note=" ".join(notes),
+        website_about=website_about.strip(),
+        website_about_url=website_about_url,
+    )
+
+
+def _website_key_points(website_about: str) -> list[tuple[str, str]]:
+    sentences = _split_sentences(website_about)
+    if len(sentences) <= 1:
+        return []
+    extras = _unique_sentences(sentences[1:], existing=[sentences[0]])
+    if not extras:
+        return []
+    return [("From company website", " ".join(extras[:3]))]
 
 
 def _normalize_text(text: str) -> str:
@@ -252,13 +374,22 @@ def fetch_provider_overview(ctx: RunContext, entity: Entity, *, provider: str | 
     return None
 
 
+def _overview_sources(overview: ProviderOverview) -> str:
+    parts = [f"[{overview.provider}]({overview.url})"]
+    if overview.website_about_url:
+        parts.append(f"[company website]({overview.website_about_url})")
+    if len(parts) == 1:
+        return f"_Source: {parts[0]}_"
+    return "_Sources: " + ", ".join(parts) + "_"
+
+
 def render_overview_markdown(overview: ProviderOverview | None) -> list[str]:
     if not overview or not (overview.about or overview.key_points):
         return ["### Company overview", "", "_No overview text parsed._", ""]
     lines = [
         "### Company overview",
         "",
-        f"_Source: [{overview.provider}]({overview.url})_",
+        _overview_sources(overview),
         "",
     ]
     if overview.about:

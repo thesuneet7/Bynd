@@ -1,23 +1,24 @@
 # Brakes India Private Limited
 
 **Ticker:** `—` · **Listing:** unlisted
-**Generated:** 2026-06-06T09:24:09.022885+00:00
+**Generated:** 2026-06-07T14:42:37.553993+00:00
 
 Unified profile: screener/tofler overview & financials + products/customers (NSE/BSE filings for listed; official website for unlisted).
 
 ### Company overview
 
-_Source: [tofler.in](https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928)_
+_Sources: [tofler.in](https://www.tofler.in/brakes-india-private-limited/company/U35999TN1962PTC004928), [company website](https://www.brakesindia.com/product)_
 
 **About**
 
-Brakes India Private Limited is a leading automotive components manufacturer specializing in brake systems and solutions. Operating primarily in India, the company provides a range of products including disc brakes, drum brakes, and hydraulic systems, supporting both commercial and passenger vehicle segments with advanced quality and safety features. Brakes India Private Limited, is an unlisted private company incorporated on 09 November, 1962. It is classified as a private limited company and is located in , Tamil Nadu. It's authorized share capital is INR 125.00 cr and the total paid-up capital is INR 17.46 cr.
+Brakes India is promoted by the TSF Group, whose heritage dates back to 1911. The group’s interests span the automotive and financial services sectors. Brakes India Private Limited is a leading automotive components manufacturer specializing in brake systems and solutions. Operating primarily in India, the company provides a range of products including disc brakes, drum brakes, and hydraulic systems, supporting both commercial and passenger vehicle segments with advanced quality and safety features. It is classified as a private limited company and is located in , Tamil Nadu.
 
 **Key points**
 
 - **Company profile:** Brakes India's operating revenue range is Over INR 500 cr for the financial year ending on 31 March, 2025. It's EBITDA has decreased by 11.29% over the previous year. At the same time, it's book networth has increased by 17.15%. The current status of Brakes India Private Limited is - Active. The last reported AGM (Annual General Meeting) of Brakes India Private Limited, per our records, was held on 20 June, 2025. The company has 8 directors - Santhanam Viji, Viji Sriram, and others. The Corporate Identification Number (CIN) of Brakes India Private Limited is U35999TN1962PTC004928. It's registered address is at NO 21 PATULAS ROADMADRAS-600002. TAMILNADU, TAMILNADU, Tamil Nadu, India, 600002, - 600002.
+- **Registry details:** Brakes India Private Limited, is an unlisted private company incorporated on 09 November, 1962. It's authorized share capital is INR 125.00 cr and the total paid-up capital is INR 17.46 cr.
 
-_Tofler hides part of the overview behind **Read More** in the UI; the full text is present in the page HTML and was parsed from both description blocks._
+_Tofler hides part of the overview behind **Read More** in the UI; the full text is present in the page HTML and was parsed from both description blocks. About section merged from provider overview and the company's official website (duplicate sentences removed)._
 
 
 ### Financials

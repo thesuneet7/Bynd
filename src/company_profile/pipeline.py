@@ -12,7 +12,7 @@ from listed_docs.extraction import run_extraction
 from listed_docs.pipeline import run_listed_docs_fetch
 from listed_docs.unlisted import extract_unlisted_products_customers
 from onepager.config import OUTPUTS_DIR
-from onepager.financials.overview import ProviderOverview
+from onepager.financials.overview import ProviderOverview, merge_overview_with_website, render_overview_markdown
 from onepager.schemas import Entity, FinancialCell
 
 from .assemble import build_profile_json, build_profile_markdown, load_knowledge_graph
@@ -65,6 +65,7 @@ def run_company_profile(
         log.append(f"scrape warning: {scrape.error}")
 
     overview = scrape.overview
+    overview_md = scrape.overview_markdown
 
     # 2) Listed docs fetch (listed companies only)
     kg = None
@@ -106,6 +107,15 @@ def run_company_profile(
         )
         log.extend(unlisted.notes)
         kg = unlisted.kg
+        if unlisted.website_about is not None:
+            overview = merge_overview_with_website(
+                overview,
+                website_about=unlisted.website_about.about,
+                website_about_url=unlisted.website_about.url,
+                website_sections=unlisted.website_about.sections,
+            )
+            log.append(f"merged website about into overview ({unlisted.website_about.url})")
+            overview_md = render_overview_markdown(overview)
 
     # 4) Assemble unified profile
     log.append("Step 4: export company profile JSON + markdown")
@@ -126,7 +136,7 @@ def run_company_profile(
         build_profile_markdown(
             entity=entity,
             overview=overview,
-            overview_md=scrape.overview_markdown,
+            overview_md=overview_md,
             cells=scrape.cells,
             financials_url=scrape.url,
             financials_provider=scrape.provider,
